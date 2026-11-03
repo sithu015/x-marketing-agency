@@ -6,15 +6,11 @@
 // BILINGUAL TRANSLATION DICTIONARY
 const translations = {
   en: {
-    banner_badge: "Special Offer",
-    banner_text: "3-Month Partnership + 1 Month Complimentary Service (Exclusive Partner Package) — Capped at 3 brands / month.",
-    banner_link: "View Terms →",
     nav_overview: "Overview",
     nav_services: "Services",
     nav_cases: "Case Studies",
     nav_portfolio: "Portfolio",
     nav_clients: "Clients",
-    nav_pricing: "Packages",
     nav_process: "Process",
     nav_cta: "Inquire",
     hero_tagline: "Independent Marketing Growth Practice",
@@ -22,7 +18,7 @@ const translations = {
     hero_desc: "X Marketing Agency partners with consumer brands, conglomerates, and retailers in Myanmar to turn attention into quantifiable commercial growth through disciplined media buying, editorial visual design, and viral short video production.",
     stat_clients_label: "Active Partners",
     stat_output_label: "Monthly Deliverables Managed",
-    stat_model_label: "Partnership Structure",
+    stat_model_label: "Service Scope",
     hero_cta_portfolio: "Explore Works",
     hero_cta_cases: "Landmark & Time Square Case Studies",
     overview_sub: "Foundations",
@@ -61,23 +57,16 @@ const translations = {
     clients_heading: "Our Valued Clients & Partners",
     clients_desc: "Over 30 verified consumer brands, retail chains, and enterprise partners across Myanmar.",
     clients_caption: "Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.",
-    pkg_sub: "Agency Retainers",
-    pkg_heading: "Clear, Scalable Marketing Investments",
-    pkg_desc: "Transparent monthly agency retainers and tailored service packages designed to scale your brand presence. Pick a standard monthly tier or take advantage of our exclusive partnership promotion.",
     wf_sub: "Creative Operations",
     wf_heading: "6-Step Production Workflow & Creative Standards",
     wf_desc: "We operate with agency discipline. Every deliverable follows our structured review process, brand alignment checks, and platform compliance guidelines."
   },
   my: {
-    banner_badge: "အထူးအစီအစဉ်",
-    banner_text: "၃ လစာချုပ် ချုပ်ဆိုပါက ၁ လ အခမဲ့ လက်ဆောင် (Partner 30-Day Full Package) — တစ်လလျှင် ၃ နေရာသာ ကန့်သတ်ထားပါသည်။",
-    banner_link: "စည်းမျဉ်းများ ကြည့်ရန် →",
     nav_overview: "ခံယူချက်",
     nav_services: "ဝန်ဆောင်မှုများ",
     nav_cases: "ဖြစ်ရပ်လေ့လာချက်များ",
     nav_portfolio: "ဒီဇိုင်းလက်ရာများ",
     nav_clients: "မိတ်ဖက်များ",
-    nav_pricing: "ဈေးနှုန်းများ",
     nav_process: "လုပ်ငန်းစဉ်",
     nav_cta: "စုံစမ်းရန်",
     hero_tagline: "သီးခြား စျေးကွက်ဖွံ့ဖြိုးတိုးတက်ရေး အေဂျင်စီ",
@@ -85,7 +74,7 @@ const translations = {
     hero_desc: "X Marketing Agency သည် မြန်မာနိုင်ငံရှိ စီးပွားရေးလုပ်ငန်းကြီးများနှင့် လက်တွဲကာ စည်းကမ်းစနစ်ကျသော ကြော်ငြာစီမံခန့်ခွဲမှု၊ Editorial စတိုင် ဒီဇိုင်းလက်ရာများနှင့် ထိရောက်သော Short Video များဖြင့် အမှန်တကယ် အရောင်းတိုးတက်မှုကို ဖော်ဆောင်ပေးပါသည်။",
     stat_clients_label: "လက်တွဲထားသော မိတ်ဖက်များ",
     stat_output_label: "လစဉ် စီမံထုတ်လုပ်ပေးသော အကြောင်းအရာများ",
-    stat_model_label: "ပူးပေါင်းဆောင်ရွက်မှု မော်ဒယ်",
+    stat_model_label: "ဝန်ဆောင်မှု နယ်ပယ်",
     hero_cta_portfolio: "ဒီဇိုင်းလက်ရာများ ကြည့်ရန်",
     hero_cta_cases: "Landmark & Time Square ကမ်ပိန်းများ",
     overview_sub: "အခြေခံ မဏ္ဍိုင်များ",
@@ -117,16 +106,13 @@ const translations = {
     cases_sub: "ဖြစ်ရပ်လေ့လာချက်များ",
     cases_heading: "ထိပ်တန်း လုပ်ငန်းကြီးများနှင့် အောင်မြင်သော ကမ်ပိန်းများ",
     cases_subdesc: "မဟာဗျူဟာမြောက် ကမ်ပိန်းများ၊ ဖန်တီးမှုဒီဇိုင်းများနှင့် တိုင်းတာနိုင်သော ရလဒ်ကောင်းများကို ဖော်ဆောင်ပေးထားသည့် လက်ရာများ။",
-    port_sub: "ဖန်တီးမှု မှတ်တမ်းများ",
+    port_sub: "ဖန်တီးမှု လက်ရာများ",
     port_heading: "ကဏ္ဍပေါင်းစုံအတွက် အရည်အသွေးမြင့် ဖန်တီးမှုလက်ရာများ",
     port_desc: "ဒီဇိုင်းတစ်ခုချင်းစီကို နှိပ်၍ အသေးစိတ် အချက်အလက်များနှင့် မဟာဗျူဟာရည်ရွယ်ချက်များကို လေ့လာနိုင်ပါသည်။",
-    clients_sub: "ယုံကြည်စိတ်ချရမှု မှတ်တမ်း",
+    clients_sub: "ယုံကြည်စိတ်ချရမှု",
     clients_heading: "ကျွန်ုပ်တို့၏ တန်ဖိုးထားရသော မိတ်ဖက်လုပ်ငန်းများ",
     clients_desc: "မြန်မာနိုင်ငံတစ်ဝှမ်းရှိ အမှတ်တံဆိပ် ၃၀ ကျော်၏ ယုံကြည်အားကိုးမှု။",
     clients_caption: "Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique စသည့် လုပ်ငန်းများစွာ ပါဝင်ပါသည်။",
-    pkg_sub: "အေဂျင်စီ ဝန်ဆောင်မှု ပက်ကေ့ချ်များ",
-    pkg_heading: "ရှင်းလင်းတိကျသော ရင်းနှီးမြှုပ်နှံမှု ပက်ကေ့ချ်များ",
-    pkg_desc: "ပွင့်လင်းမြင်သာပြီး အဆင့်အတန်းမြင့်မားသော ဝန်ဆောင်မှု ပက်ကေ့ချ်များနှင့် ဈေးနှုန်းသတ်မှတ်ချက်များ ဖြစ်ပါသည်။",
     wf_sub: "ဖန်တီးမှု လုပ်ငန်းစဉ်",
     wf_heading: "အဆင့် ၆ ဆင့်ပါ ထုတ်လုပ်မှု လုပ်ငန်းစဉ်နှင့် အရည်အသွေး စံချိန်စံညွှန်းများ",
     wf_desc: "အဆင့်တိုင်းတွင် စနစ်တကျ ပြန်လည်သုံးသပ်ခြင်း၊ အမှတ်တံဆိပ်နှင့် ကိုက်ညီမှုရှိစေခြင်းနှင့် ပလက်ဖောင်း စည်းမျဉ်းများကို လိုက်နာဆောင်ရွက်ပါသည်။"
@@ -139,7 +125,6 @@ let currentLang = 'my';
 document.addEventListener('DOMContentLoaded', () => {
   setupLanguageToggle();
   setupPortfolioFilter();
-  setupPricingCalculator();
   setupMobileMenu();
   setupNativeDialogFallbacks();
   setupScrollReveal();
@@ -149,43 +134,50 @@ document.addEventListener('DOMContentLoaded', () => {
 // LANGUAGE TOGGLE
 function setupLanguageToggle() {
   const toggleBtn = document.getElementById('langToggleBtn');
-  const label = document.getElementById('currentLangLabel');
+  const langLabel = document.getElementById('currentLangLabel');
 
-  function toggle() {
-    currentLang = currentLang === 'my' ? 'en' : 'my';
-    label.textContent = currentLang === 'my' ? 'မြန်မာ' : 'English';
-    applyTranslations(currentLang);
+  if (!toggleBtn) return;
+
+  function updatePageLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    if (langLabel) {
+      langLabel.textContent = lang === 'my' ? 'မြန်မာ' : 'English';
+    }
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
   }
 
-  toggleBtn.addEventListener('click', toggle);
-  applyTranslations(currentLang);
-}
-
-function applyTranslations(lang) {
-  const dict = translations[lang];
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (dict && dict[key]) {
-      el.innerHTML = dict[key];
-    }
+  toggleBtn.addEventListener('click', () => {
+    const nextLang = currentLang === 'my' ? 'en' : 'my';
+    updatePageLanguage(nextLang);
   });
+
+  updatePageLanguage('my');
 }
 
 // PORTFOLIO FILTER
 function setupPortfolioFilter() {
-  const buttons = document.querySelectorAll('.filter-tag');
-  const items = document.querySelectorAll('.portfolio-item');
+  const filterBtns = document.querySelectorAll('.filter-tag[data-category]');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-  buttons.forEach(btn => {
+  filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
       const category = btn.getAttribute('data-category');
 
-      items.forEach(item => {
-        if (category === 'all' || item.getAttribute('data-category') === category) {
-          item.style.display = 'block';
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      portfolioItems.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.style.display = '';
+          item.classList.add('visible');
         } else {
           item.style.display = 'none';
         }
@@ -194,9 +186,11 @@ function setupPortfolioFilter() {
   });
 }
 
-// NATIVE <dialog> MODALS
+// LIGHTBOX & MODALS
 function openLightbox(imgSrc, title, desc) {
   const dialog = document.getElementById('lightboxDialog');
+  if (!dialog) return;
+
   const modalImg = document.getElementById('lightboxImg');
   const modalTitle = document.getElementById('lightboxTitle');
   const modalDesc = document.getElementById('lightboxDesc');
@@ -209,14 +203,10 @@ function openLightbox(imgSrc, title, desc) {
 }
 
 function openCaseStudyModal(caseId) {
-  const dialog = document.getElementById('caseStudyDialog') || document.getElementById('contractDialog');
+  const dialog = document.getElementById('caseStudyDialog');
   if (dialog) {
     dialog.showModal();
   }
-}
-
-function openContractDetailsModal() {
-  openCaseStudyModal('landmark');
 }
 
 // Fallback for light-dismiss on browsers lacking native closedby="any"
@@ -241,94 +231,22 @@ function setupNativeDialogFallbacks() {
   }
 }
 
-// INTERACTIVE CALCULATOR
-function setupPricingCalculator() {
-  const fbSlider = document.getElementById('fbPostSlider');
-  const fbVal = document.getElementById('fbPostCountVal');
-
-  const tiktokSlider = document.getElementById('tiktokSlider');
-  const tiktokVal = document.getElementById('tiktokVideoCountVal');
-
-  const adSlider = document.getElementById('adSpendSlider');
-  const adVal = document.getElementById('adSpendVal');
-
-  const durationBtns = document.querySelectorAll('.duration-btn');
-
-  let selectedMonths = 4;
-
-  function formatMMK(amount) {
-    return 'MMK ' + amount.toLocaleString('en-US');
-  }
-
-  function updateCalculator() {
-    const fbPosts = parseInt(fbSlider.value, 10);
-    const tiktokVideos = parseInt(tiktokSlider.value, 10);
-    const adSpend = parseInt(adSlider.value, 10);
-
-    fbVal.textContent = `${fbPosts} Posts`;
-    tiktokVal.textContent = `${tiktokVideos} Videos`;
-    adVal.textContent = `${formatMMK(adSpend)}`;
-
-    // Standard agency retainer calculation based on deliverable mix
-    let monthlyAgencyFee = 400000 + (fbPosts * 25000) + (tiktokVideos * 100000);
-    monthlyAgencyFee = Math.round(monthlyAgencyFee / 50000) * 50000;
-    if (monthlyAgencyFee < 500000) monthlyAgencyFee = 500000;
-
-    let discount = 0;
-    let paidAgencyMonths = selectedMonths;
-
-    if (selectedMonths === 4) {
-      paidAgencyMonths = 3;
-      discount = monthlyAgencyFee;
-      document.getElementById('calcDiscountRow').style.display = 'flex';
-      document.getElementById('calcDiscountVal').textContent = `- ${formatMMK(discount)} (1 Mo Free)`;
-    } else {
-      document.getElementById('calcDiscountRow').style.display = 'none';
-    }
-
-    const totalAgencyFee = paidAgencyMonths * monthlyAgencyFee;
-    const totalAdBudget = selectedMonths * adSpend;
-    const grandTotal = totalAgencyFee + totalAdBudget;
-
-    document.getElementById('calcAgencyMonthly').textContent = formatMMK(monthlyAgencyFee);
-    document.getElementById('calcAdMonthly').textContent = formatMMK(adSpend);
-    document.getElementById('calcTotalBudget').textContent = formatMMK(grandTotal);
-
-    const totalFB = fbPosts * selectedMonths;
-    const totalTikTok = tiktokVideos * selectedMonths;
-    document.getElementById('calcDeliverablesSummary').textContent = 
-      `Includes ${totalFB} Facebook visual posts and ${totalTikTok} TikTok vertical videos across ${selectedMonths} months.`;
-  }
-
-  fbSlider.addEventListener('input', updateCalculator);
-  tiktokSlider.addEventListener('input', updateCalculator);
-  adSlider.addEventListener('input', updateCalculator);
-
-  durationBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      durationBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      selectedMonths = parseInt(btn.getAttribute('data-months'), 10);
-      updateCalculator();
-    });
-  });
-
-  updateCalculator();
-}
-
 // ACCORDION FAQ
 function toggleAccordion(trigger) {
   const item = trigger.closest('.accordion-item');
+  if (!item) return;
   const isOpen = item.classList.contains('open');
   
   document.querySelectorAll('.accordion-item').forEach(i => {
     i.classList.remove('open');
-    i.querySelector('.accordion-trigger span:last-child').textContent = '+';
+    const symbol = i.querySelector('.accordion-trigger span:last-child');
+    if (symbol) symbol.textContent = '+';
   });
 
   if (!isOpen) {
     item.classList.add('open');
-    trigger.querySelector('span:last-child').textContent = '−';
+    const symbol = trigger.querySelector('span:last-child');
+    if (symbol) symbol.textContent = '−';
   }
 }
 
@@ -365,6 +283,7 @@ function setupKeyboardShortcuts() {
 function setupMobileMenu() {
   const menuBtn = document.getElementById('mobileMenuBtn');
   const menu = document.getElementById('mobileMenu');
+  if (!menuBtn || !menu) return;
 
   menuBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
@@ -380,6 +299,6 @@ function setupMobileMenu() {
 // FORM SUBMISSION HANDLER
 function handleFormSubmit(e) {
   e.preventDefault();
-  alert('Your consultation request has been submitted. Our strategy team will reach out within 24 hours.\n\nစုံစမ်းမေးမြန်းမှုကို လက်ခံရရှိပြီးဖြစ်ပါသည်။ မဟာဗျူဟာအဖွဲ့မှ ၂၄ နာရီအတွင်း အမြန်ဆုံး ဆက်သွယ်ပေးပါမည်။');
+  alert('Your partnership inquiry has been submitted. Our strategy team will reach out within 24 hours.\n\nစုံစမ်းမေးမြန်းမှုကို လက်ခံရရှိပြီးဖြစ်ပါသည်။ မဟာဗျူဟာအဖွဲ့မှ ၂၄ နာရီအတွင်း အမြန်ဆုံး ဆက်သွယ်ပေးပါမည်။');
   e.target.reset();
 }
