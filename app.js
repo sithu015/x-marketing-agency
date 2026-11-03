@@ -1,6 +1,7 @@
 /**
- * X Marketing Agency — Application Core Logic
- * Standards: minimalist-ui, design-taste-frontend, modern-web-guidance
+ * X Marketing Agency : Application Core Logic
+ * Refactored: design-taste-frontend + using-superpowers
+ * Accent: Cyan locked | No em-dashes | No serif | Single CTA intent per button
  */
 
 // BILINGUAL TRANSLATION DICTIONARY
@@ -19,8 +20,8 @@ const translations = {
     stat_clients_label: "Active Partners",
     stat_output_label: "Creative Production",
     stat_model_label: "Service Scope",
-    hero_cta_portfolio: "Explore Works",
-    hero_cta_cases: "Landmark & Time Square Case Studies",
+    hero_cta_portfolio: "View Our Work",
+    hero_cta_contact: "Start a Project",
     overview_sub: "Foundations",
     overview_heading: "More Than Marketing. We Build Business Growth.",
     overview_desc: "We reject superficial vanity metrics. By synchronizing creative storytelling, retail presence, and scientific media buying, we help enterprises scale sustainably.",
@@ -58,8 +59,20 @@ const translations = {
     clients_desc: "Over 30 verified consumer brands, retail chains, and enterprise partners across Myanmar.",
     clients_caption: "Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.",
     wf_sub: "Creative Operations",
-    wf_heading: "6-Step Production Workflow & Creative Standards",
-    wf_desc: "We operate with agency discipline. Every project follows our structured creative process, brand alignment checks, and platform compliance guidelines."
+    wf_heading: "6-Step production workflow and creative standards.",
+    wf_desc: "Agency discipline on every project: structured creative process, brand alignment, and platform compliance.",
+    wf1_title: "Brand Immersion",
+    wf1_desc: "In-depth alignment on brand positioning, audience personas, visual tone of voice, and campaign objectives.",
+    wf2_title: "Concept & Script Development",
+    wf2_desc: "Moodboards, art-directed visual concepts, Burmese/English copy, and vertical video scripts with viral hooks.",
+    wf3_title: "Collaborative Alignment",
+    wf3_desc: "Iterative feedback ensuring all drafts reflect brand elegance, tone of voice, and platform policies.",
+    wf4_title: "Production & Cinematography",
+    wf4_desc: "On-location and studio shooting with high-end camera rigs, professional lighting, and 9:16 art direction.",
+    wf5_title: "Post-Production & Polish",
+    wf5_desc: "Editorial color grading, typography styling, custom audio engineering, and fine retouching.",
+    wf6_title: "Launch & Growth Analytics",
+    wf6_desc: "Multi-channel deployment across Meta and TikTok, active ad audience scaling, and performance insights."
   },
   my: {
     nav_overview: "ခံယူချက်",
@@ -76,7 +89,7 @@ const translations = {
     stat_output_label: "တီထွင်ဖန်တီးမှု ထုတ်လုပ်မှု",
     stat_model_label: "ဝန်ဆောင်မှု နယ်ပယ်",
     hero_cta_portfolio: "ဒီဇိုင်းလက်ရာများ ကြည့်ရန်",
-    hero_cta_cases: "Landmark & Time Square ကမ်ပိန်းများ",
+    hero_cta_contact: "ပူးပေါင်းဆောင်ရွက်ရန်",
     overview_sub: "အခြေခံ မဏ္ဍိုင်များ",
     overview_heading: "စျေးကွက်ရှာဖွေခြင်းထက် ပိုမိုခိုင်မာသော စီးပွားရေး တိုးတက်မှုကို တည်ဆောက်ပါသည်",
     overview_desc: "အပေါ်ယံဂဏန်းများထက် စီးပွားရေးလုပ်ငန်းအတွက် အမှန်တကယ် အရောင်းတိုးတက်မှုနှင့် အမှတ်တံဆိပ်ခိုင်မာမှုကို ဦးတည်ပါသည်။ ဆန်းသစ်သော ဖန်တီးမှု၊ ဆိုင်တွင်းအရောင်းမြှင့်တင်မှုနှင့် တိကျသောကြော်ငြာများကို စနစ်တကျ ပေါင်းစပ်ဆောင်ရွက်ပေးပါသည်။",
@@ -115,7 +128,19 @@ const translations = {
     clients_caption: "Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique စသည့် လုပ်ငန်းများစွာ ပါဝင်ပါသည်။",
     wf_sub: "ဖန်တီးမှု လုပ်ငန်းစဉ်",
     wf_heading: "အဆင့် ၆ ဆင့်ပါ ထုတ်လုပ်မှု လုပ်ငန်းစဉ်နှင့် အရည်အသွေး စံချိန်စံညွှန်းများ",
-    wf_desc: "လုပ်ငန်းစဉ် အဆင့်တိုင်းတွင် အမှတ်တံဆိပ် ခိုင်မာလှပစေရန် စနစ်တကျ ဖန်တီးတည်ဆောက်ပေးပါသည်။"
+    wf_desc: "လုပ်ငန်းစဉ် အဆင့်တိုင်းတွင် အမှတ်တံဆိပ် ခိုင်မာလှပစေရန် စနစ်တကျ ဖန်တီးတည်ဆောက်ပေးပါသည်။",
+    wf1_title: "အမှတ်တံဆိပ် နားလည်မှု",
+    wf1_desc: "Brand positioning, audience personas, visual tone of voice နှင့် ကမ်ပိန်း ရည်ရွယ်ချက်များ သတ်မှတ်ခြင်း။",
+    wf2_title: "ဖန်တီးမှု ရေးဆွဲခြင်း",
+    wf2_desc: "Moodboards, ဒေါင်လိုက် video scriptများနှင့် မြန်မာ/အင်္ဂလိပ် copywriting ဖန်တီးခြင်း။",
+    wf3_title: "ပူးပေါင်း ညှိနှိုင်းခြင်း",
+    wf3_desc: "Brand elegance နှင့် platform policy များနှင့် ကိုက်ညီစေရန် အကြိမ်ကြိမ် စစ်ဆေးညှိနှိုင်းခြင်း။",
+    wf4_title: "ရိုက်ကူးထုတ်လုပ်မှု",
+    wf4_desc: "ကျွမ်းကျင်ရိုက်ကူးရေးအဖွဲ့ဖြင့် အချိုးကျ lighting နှင့် 9:16 Art Direction ဖြင့် ရိုက်ကူးပေးခြင်း။",
+    wf5_title: "Post-Production ပြုပြင်ခြင်း",
+    wf5_desc: "Film-grade color grading, typography styling, custom audio engineering နှင့် retouching ဆောင်ရွက်ပေးခြင်း။",
+    wf6_title: "Launch နှင့် Analytics",
+    wf6_desc: "Meta နှင့် TikTok တစ်ပြိုင်နက် ဖြန့်ချိပြီး performance insights ဖြင့် ဆက်လက် scale ချဲ့ပေးခြင်း။"
   }
 };
 
@@ -259,10 +284,9 @@ function setupScrollReveal() {
         obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.bento-card, .portfolio-item').forEach(el => {
-    el.classList.add('scroll-reveal');
+  document.querySelectorAll('.reveal').forEach(el => {
     observer.observe(el);
   });
 }
@@ -286,12 +310,12 @@ function setupMobileMenu() {
   if (!menuBtn || !menu) return;
 
   menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    menu.classList.toggle('open');
   });
 
   menu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      menu.classList.add('hidden');
+      menu.classList.remove('open');
     });
   });
 }

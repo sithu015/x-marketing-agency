@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>X Marketing Agency — Growth Strategy & Creative Portfolio</title>
-  <meta name="description" content="Growth marketing partner based in Myanmar. Strategic brand architecture, TikTok short video production, Meta performance media buying, and retail integration.">
-  
-  <!-- Typography: Plus Jakarta Sans, Instrument Serif, Geist Mono, Pyidaungsu -->
+  <title>X Marketing Agency : Creative Portfolio</title>
+  <meta name="description" content="X Marketing Agency: Myanmar's high-impact growth marketing partner. Strategic brand architecture, TikTok short video production, Meta performance media buying, and retail integration.">
+  <meta property="og:title" content="X Marketing Agency : Creative Portfolio">
+  <meta property="og:description" content="Full-funnel creative and media partner for consumer brands across Myanmar.">
+  <meta property="og:type" content="website">
+
+  <!-- Typography: Plus Jakarta Sans + Geist Mono + Pyidaungsu (no serif) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Pyidaungsu:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- Phosphor Icons (Technical, consistent stroke width: Regular and Bold) -->
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Pyidaungsu:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS via CDN with customized dark agency configuration -->
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -25,16 +28,11 @@
             canvas: '#07080D',
             surface: '#0E121E',
             subtle: '#141A2B',
-            border: 'rgba(255, 255, 255, 0.08)',
-            borderStrong: 'rgba(255, 255, 255, 0.18)',
-            charcoal: '#F8FAFC',
-            muted: '#94A3B8',
-            lightMuted: '#64748B'
+            accent: '#38BDF8',
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'Geist', 'Pyidaungsu', '-apple-system', 'sans-serif'],
-            serif: ['"Instrument Serif"', 'Pyidaungsu', 'Georgia', 'serif'],
-            mono: ['"Geist Mono"', 'SF Mono', 'monospace']
+            mono: ['"Geist Mono"', 'SF Mono', 'monospace'],
           }
         }
       }
@@ -42,576 +40,477 @@
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-canvas text-charcoal font-sans selection:bg-cyan-500/30 selection:text-white">
+<body class="bg-canvas font-sans selection:bg-cyan-500/30 selection:text-white" style="color: var(--text-primary)">
 
-  <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-border">
+  <!-- ======================================================================
+       NAVIGATION
+       ====================================================================== -->
+  <header class="sticky top-0 z-40 border-b" style="background: rgba(14,18,30,0.90); backdrop-filter: blur(16px); border-color: var(--border)">
     <div class="content-constraint h-16 flex items-center justify-between">
-      
-      <!-- Agency Wordmark & Mascot -->
-      <a href="#" class="flex items-center gap-3 text-decoration-none group">
-        <div class="w-8 h-8 rounded border border-border bg-subtle flex items-center justify-center p-0.5 group-hover:border-borderStrong transition-colors">
-          <img src="portfolio_assets/mascot.png" alt="X Marketing Mascot" class="w-6 h-6 object-contain" width="24" height="24">
+
+      <!-- Wordmark -->
+      <a href="#" class="flex items-center gap-2.5 no-underline group">
+        <div class="w-8 h-8 rounded-lg border flex items-center justify-center p-0.5 transition-colors group-hover:border-accent/40" style="border-color: var(--border); background: var(--surface-subtle)">
+          <img src="portfolio_assets/mascot.png" alt="X Marketing" class="w-5 h-5 object-contain" width="20" height="20">
         </div>
-        <div class="flex flex-col">
-          <div class="flex items-center gap-1.5">
-            <span class="font-bold text-sm tracking-tight text-charcoal">X MARKETING AGENCY</span>
-            <span class="text-[10px] font-mono font-medium px-1.5 py-0.2 rounded bg-subtle border border-border text-muted">MM/ASIA</span>
-          </div>
-          <span class="text-[10px] text-muted tracking-wide font-mono uppercase">Growth Marketing Partner</span>
+        <div class="flex flex-col leading-none">
+          <span class="font-bold text-sm tracking-tight" style="color: var(--text-primary); letter-spacing: -0.02em">X MARKETING</span>
+          <span class="text-[10px] font-mono" style="color: var(--text-tertiary)">Growth Partner · MM/ASIA</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Items with Micro-Icons -->
-      <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-muted">
-        <a href="#overview" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_overview">
-          <i class="ph-bold ph-compass text-xs"></i>
-          <span>Overview</span>
-        </a>
-        <a href="#services" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_services">
-          <i class="ph-bold ph-squares-four text-xs"></i>
-          <span>Services</span>
-        </a>
-        <a href="#case-studies" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_cases">
-          <i class="ph-bold ph-briefcase text-xs"></i>
-          <span>Case Studies</span>
-        </a>
-        <a href="#portfolio" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_portfolio">
-          <i class="ph-bold ph-image text-xs"></i>
-          <span>Portfolio</span>
-        </a>
-        <a href="#clients" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_clients">
-          <i class="ph-bold ph-buildings text-xs"></i>
-          <span>Clients</span>
-        </a>
-        <a href="#workflow" class="hover:text-charcoal transition-colors flex items-center gap-1" data-i18n="nav_process">
-          <i class="ph-bold ph-git-fork text-xs"></i>
-          <span>Process</span>
-        </a>
+      <!-- Desktop Nav : single line, 6 items, 80px header -->
+      <nav class="hidden md:flex items-center gap-5 text-xs font-semibold" style="color: var(--text-secondary)">
+        <a href="#overview" class="hover:text-white transition-colors" data-i18n="nav_overview">Overview</a>
+        <a href="#services" class="hover:text-white transition-colors" data-i18n="nav_services">Services</a>
+        <a href="#case-studies" class="hover:text-white transition-colors" data-i18n="nav_cases">Cases</a>
+        <a href="#portfolio" class="hover:text-white transition-colors" data-i18n="nav_portfolio">Portfolio</a>
+        <a href="#clients" class="hover:text-white transition-colors" data-i18n="nav_clients">Clients</a>
+        <a href="#workflow" class="hover:text-white transition-colors" data-i18n="nav_process">Process</a>
       </nav>
 
-      <!-- Language Toggle & Direct Actions -->
-      <div class="flex items-center gap-2.5">
-        
-        <!-- Language Switcher with Keystroke Indicator -->
-        <button id="langToggleBtn" class="btn-secondary text-xs py-1.5 px-2.5" title="Press L to switch language">
+      <!-- Right Actions -->
+      <div class="flex items-center gap-2">
+        <button id="langToggleBtn" class="btn-secondary text-xs py-1.5 px-3" title="Press L to switch language">
           <i class="ph-bold ph-translate text-sm"></i>
           <span id="currentLangLabel">မြန်မာ</span>
           <kbd class="hidden sm:inline-block">L</kbd>
         </button>
-
-        <!-- Facebook Link -->
-        <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" rel="noopener noreferrer" class="btn-secondary text-xs py-1.5 px-2.5" title="Facebook Page">
+        <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" rel="noopener noreferrer" class="btn-secondary text-xs py-1.5 px-3">
           <i class="ph-bold ph-facebook-logo text-sm"></i>
           <span class="hidden sm:inline">Facebook</span>
         </a>
-
-        <!-- Contact CTA -->
-        <a href="#contact" class="btn-primary text-xs py-1.5 px-3">
-          <i class="ph-bold ph-paper-plane-tilt text-xs"></i>
-          <span data-i18n="nav_cta">Inquire</span>
-        </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" class="md:hidden p-1.5 border border-border rounded text-charcoal bg-surface hover:bg-subtle" aria-label="Toggle Navigation Menu">
+        <a href="#contact" class="btn-primary text-xs py-1.5 px-4" data-i18n="nav_cta">Inquire</a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg border transition-colors" style="border-color: var(--border); background: var(--surface); color: var(--text-primary)" aria-label="Toggle Navigation">
           <i class="ph-bold ph-list text-base"></i>
         </button>
-
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobileMenu" class="hidden md:hidden border-b border-border bg-surface px-6 py-4 space-y-3 text-xs font-medium">
-      <a href="#overview" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_overview"><i class="ph-bold ph-compass"></i> Overview</a>
-      <a href="#services" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_services"><i class="ph-bold ph-squares-four"></i> Services</a>
-      <a href="#case-studies" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_cases"><i class="ph-bold ph-briefcase"></i> Case Studies</a>
-      <a href="#portfolio" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_portfolio"><i class="ph-bold ph-image"></i> Portfolio</a>
-      <a href="#clients" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_clients"><i class="ph-bold ph-buildings"></i> Clients</a>
-      <a href="#workflow" class="flex items-center gap-2 py-1 hover:text-charcoal" data-i18n="nav_process"><i class="ph-bold ph-git-fork"></i> Process</a>
-      <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" class="flex items-center gap-2 py-1 text-charcoal font-semibold border-t border-border pt-2">
-        <i class="ph-bold ph-facebook-logo"></i> Facebook: @XMarketingAgencyAsia ↗
-      </a>
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="md:hidden border-b px-6 py-4 space-y-2 text-sm font-semibold" style="border-color: var(--border); background: var(--surface)">
+      <a href="#overview" class="flex items-center gap-2 py-1.5 hover:text-white transition-colors" style="color: var(--text-secondary)" data-i18n="nav_overview"><i class="ph-bold ph-compass"></i> Overview</a>
+      <a href="#services" class="flex items-center gap-2 py-1.5 hover:text-white transition-colors" style="color: var(--text-secondary)" data-i18n="nav_services"><i class="ph-bold ph-squares-four"></i> Services</a>
+      <a href="#case-studies" class="flex items-center gap-2 py-1.5 hover:text-white transition-colors" style="color: var(--text-secondary)" data-i18n="nav_cases"><i class="ph-bold ph-briefcase"></i> Cases</a>
+      <a href="#portfolio" class="flex items-center gap-2 py-1.5 hover:text-white transition-colors" style="color: var(--text-secondary)" data-i18n="nav_portfolio"><i class="ph-bold ph-images"></i> Portfolio</a>
+      <a href="#clients" class="flex items-center gap-2 py-1.5 hover:text-white transition-colors" style="color: var(--text-secondary)" data-i18n="nav_clients"><i class="ph-bold ph-buildings"></i> Clients</a>
+      <a href="#contact" class="flex items-center gap-2 py-2 mt-2 font-bold border-t" style="border-color: var(--border); color: var(--accent)"><i class="ph-bold ph-paper-plane-tilt"></i> Inquire Now</a>
     </div>
   </header>
 
-  <!-- HERO SECTION: RICH CYBER-LUXURY SHOWCASE -->
-  <section class="py-20 md:py-28 border-b border-border relative overflow-hidden">
-    <!-- Ambient Atmospheric Glow Orbs -->
-    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute top-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- ======================================================================
+       HERO : Left-aligned split, viewport-fit, max 4 text elements
+       ====================================================================== -->
+  <section class="relative overflow-hidden" style="min-height: 100dvh; display: flex; align-items: center; border-bottom: 1px solid var(--border)">
 
-    <div class="content-constraint relative z-10">
-      
-      <!-- Top Meta Tag with Glowing Pulse Beacon -->
-      <div class="mb-6 flex flex-wrap items-center gap-3">
-        <span class="badge-neutral font-mono flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <span data-i18n="hero_tagline">Independent Marketing Growth Practice</span>
-        </span>
-        <span class="text-xs text-muted font-mono flex items-center gap-1.5">
-          <i class="ph-bold ph-map-pin text-xs text-cyan-400"></i>
-          <span>Yangon, Myanmar • Est. 2026</span>
-        </span>
-      </div>
+    <!-- Ambient glow : sparse, NOT flooding -->
+    <div class="absolute pointer-events-none" style="top: -10%; left: -5%; width: 50%; height: 60%; background: radial-gradient(ellipse, rgba(56,189,248,0.08) 0%, transparent 65%);"></div>
+    <div class="absolute pointer-events-none" style="top: 20%; right: -5%; width: 40%; height: 50%; background: radial-gradient(ellipse, rgba(99,102,241,0.06) 0%, transparent 65%);"></div>
 
-      <!-- Main Headline with Rich Gradient Highlights -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-16">
-        <div class="lg:col-span-8 space-y-5">
-          <h1 class="font-editorial text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight font-normal leading-[1.05]" data-i18n="hero_title">
-            <span class="gradient-text-glow">Strategic brand presence</span> across <span class="gradient-text-cyan">digital & physical retail.</span>
+    <div class="content-constraint relative z-10 w-full py-24 md:py-20">
+
+      <!-- Hero: 4 text elements max. No eyebrow repeated elsewhere for 2 sections. -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Headline block -->
+        <div class="space-y-6 reveal">
+
+          <!-- 1: Eyebrow (only eyebrow used in hero zone) -->
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="flex items-center gap-2 text-xs font-mono font-semibold px-3 py-1.5 rounded-full border" style="background: rgba(52,211,153,0.10); border-color: rgba(52,211,153,0.25); color: var(--tint-emerald-text)">
+              <span class="pulse-dot"></span>
+              <span data-i18n="hero_tagline">Independent Creative Agency : Yangon, Myanmar</span>
+            </span>
+          </div>
+
+          <!-- 2: Headline : 2 lines max, no serif -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight" data-i18n="hero_title">
+            <span class="gradient-text-white">Where brands become</span><br>
+            <span class="gradient-text-cyan">unforgettable forces.</span>
           </h1>
-          <p class="text-base sm:text-lg text-muted max-w-2xl font-normal leading-relaxed" data-i18n="hero_desc">
-            X Marketing Agency partners with consumer brands, conglomerates, and retailers in Myanmar to turn attention into quantifiable commercial growth through disciplined media buying, editorial visual design, and viral short video production.
+
+          <!-- 3: Subtext : 18 words, tight -->
+          <p class="text-base sm:text-lg leading-relaxed max-w-lg" style="color: var(--text-secondary)" data-i18n="hero_desc">
+            X Marketing Agency turns Myanmar brands into category-defining presences through editorial visuals, performance media, and short-form video.
           </p>
-        </div>
 
-        <!-- Quick Facts Column with Technical Glowing Icon Badges -->
-        <div class="lg:col-span-4 border-l border-border pl-6 space-y-5">
-          <div class="flex items-start gap-3">
-            <div class="icon-box icon-box-blue mt-0.5">
-              <i class="ph-bold ph-users-three text-sm"></i>
-            </div>
-            <div>
-              <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_clients_label">Active Partners</div>
-              <div class="text-2xl font-bold text-white mt-0.5">30+ Enterprise & Retailers</div>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-3">
-            <div class="icon-box icon-box-yellow mt-0.5">
-              <i class="ph-bold ph-stack text-sm"></i>
-            </div>
-            <div>
-              <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_output_label">Creative Production</div>
-              <div class="text-2xl font-bold text-white mt-0.5">High-Impact Visuals & Video</div>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-3">
-            <div class="icon-box icon-box-green mt-0.5">
-              <i class="ph-bold ph-handshake text-sm"></i>
-            </div>
-            <div>
-              <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_model_label">Service Scope</div>
-              <div class="text-2xl font-bold text-white mt-0.5">Full-Funnel Creative & Media</div>
-            </div>
+          <!-- 4: CTAs : 2 max, different intent -->
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#portfolio" class="btn-primary">
+              <i class="ph-bold ph-sparkle text-sm"></i>
+              <span data-i18n="hero_cta_portfolio">View Our Work</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="ph-bold ph-paper-plane-tilt text-sm"></i>
+              <span data-i18n="hero_cta_contact">Start a Project</span>
+            </a>
           </div>
         </div>
+
+        <!-- Right: Hero Featured Case (visual asset : asymmetric layout) -->
+        <div class="reveal reveal-delay-2">
+          <div class="bento-card overflow-hidden">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+              <span class="text-[11px] font-mono flex items-center gap-1.5" style="color: var(--text-secondary)">
+                <i class="ph-bold ph-sparkle text-xs" style="color: var(--accent)"></i>
+                landmark-united-holdings.brand-campaign
+              </span>
+              <span class="badge-cyan">
+                <i class="ph-bold ph-broadcast text-xs"></i>
+                Live
+              </span>
+            </div>
+
+            <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark United Holdings: Premium Spirits Campaign', 'Visual design series for Löwen Samt &amp; Ron Millonario 15.')">
+              <img src="portfolio_assets/cases/liquor-lowen-millonario.png"
+                   alt="Landmark Liquor Campaign"
+                   class="w-full h-auto object-cover"
+                   fetchpriority="high">
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.12)">
+                <span class="px-3 py-1.5 rounded-full font-mono text-xs flex items-center gap-1.5 shadow-sm" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)">
+                  <i class="ph-bold ph-magnifying-glass-plus"></i> Inspect
+                </span>
+              </div>
+            </div>
+
+            <div class="px-5 py-4 flex items-center justify-between" style="background: var(--surface)">
+              <div>
+                <div class="text-sm font-bold" style="color: var(--text-primary)">Landmark United Holdings</div>
+                <div class="text-xs font-mono mt-0.5" style="color: var(--text-tertiary)">Spirits &amp; Fashion : Integrated Brand Campaign</div>
+              </div>
+              <button onclick="openCaseStudyModal('landmark')" class="btn-secondary text-xs py-1.5 px-3">
+                View Case <i class="ph-bold ph-arrow-up-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Primary Action Buttons -->
-      <div class="flex flex-wrap items-center gap-3 mb-16">
-        <a href="#portfolio" class="btn-primary">
-          <i class="ph-bold ph-sparkle text-xs"></i>
-          <span data-i18n="hero_cta_portfolio">Explore Works</span>
-          <i class="ph-bold ph-arrow-down text-xs"></i>
-        </a>
-        <a href="#case-studies" class="btn-secondary">
-          <i class="ph-bold ph-briefcase text-sm"></i>
-          <span data-i18n="hero_cta_cases">Landmark & Time Square Case Studies</span>
-        </a>
-        <a href="tel:+959767157172" class="btn-secondary font-mono">
+      <!-- Stat strip : below hero split, above fold on large screens -->
+      <div class="mt-14 flex flex-wrap items-center gap-x-8 gap-y-4 pt-10 border-t reveal reveal-delay-3" style="border-color: var(--border)">
+        <div class="flex flex-col">
+          <span class="text-2xl font-extrabold tracking-tight" style="color: var(--text-primary)">30+</span>
+          <span class="text-xs font-mono mt-0.5" style="color: var(--text-tertiary)" data-i18n="stat_clients_label">Enterprise &amp; Retail Partners</span>
+        </div>
+        <div class="w-px h-8 hidden sm:block" style="background: var(--border)"></div>
+        <div class="flex flex-col">
+          <span class="text-2xl font-extrabold tracking-tight" style="color: var(--text-primary)">Meta + TikTok</span>
+          <span class="text-xs font-mono mt-0.5" style="color: var(--text-tertiary)" data-i18n="stat_output_label">Primary Media Channels</span>
+        </div>
+        <div class="w-px h-8 hidden sm:block" style="background: var(--border)"></div>
+        <div class="flex flex-col">
+          <span class="text-2xl font-extrabold tracking-tight" style="color: var(--text-primary)" data-i18n="stat_model_label">Full-Funnel</span>
+          <span class="text-xs font-mono mt-0.5" style="color: var(--text-tertiary)">Creative + Media + Retail</span>
+        </div>
+        <a href="tel:+959767157172" class="btn-secondary text-xs py-1.5 px-3 ml-auto font-mono">
           <i class="ph-bold ph-phone-call text-sm"></i>
           <span>(+95) 9 767 157 172</span>
         </a>
       </div>
-
-      <!-- Hero Featured Case: Landmark United Holdings Faux-OS Showcase -->
-      <div class="bento-card overflow-hidden">
-        <div class="window-chrome">
-          <div class="window-dots">
-            <span class="window-dot"></span>
-            <span class="window-dot"></span>
-            <span class="window-dot"></span>
-          </div>
-          <span class="text-[11px] font-mono text-muted flex items-center gap-1.5">
-            <i class="ph-bold ph-sparkle text-xs"></i>
-            <span>case-study: landmark-united-holdings.campaign-showcase</span>
-          </span>
-          <span class="badge-blue">
-            <i class="ph-bold ph-broadcast text-xs"></i>
-            <span>Integrated Campaign</span>
-          </span>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-border">
-          <div class="lg:col-span-8 p-4 sm:p-6 bg-canvas flex items-center justify-center relative group">
-            <img src="portfolio_assets/cases/liquor-lowen-millonario.png" alt="Landmark Liquor Campaign Showcase" class="w-full h-auto rounded border border-border object-cover cursor-pointer hover:opacity-95 transition-opacity" fetchpriority="high" onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark United Holdings: Premium Spirits Campaign', 'Visual design series for Löwen Samt & Ron Millonario 15. Created exclusively for client retail distribution.')">
-            <div class="absolute bottom-6 right-6 px-2.5 py-1 bg-surface/90 backdrop-blur rounded border border-border text-[11px] font-mono text-charcoal flex items-center gap-1 shadow-sm pointer-events-none">
-              <i class="ph-bold ph-magnifying-glass-plus text-xs"></i>
-              <span>Inspect High-Res</span>
-            </div>
-          </div>
-          <div class="lg:col-span-4 p-6 sm:p-8 flex flex-col justify-between bg-surface space-y-6">
-            <div class="space-y-4">
-              <span class="badge-yellow">
-                <i class="ph-bold ph-seal-check text-xs"></i>
-                <span>Campaign Brief</span>
-              </span>
-              <h3 class="font-editorial text-2xl text-charcoal">
-                Landmark United Holdings: Liquor & Fashion Acceleration
-              </h3>
-              <p class="text-xs sm:text-sm text-muted leading-relaxed">
-                An integrated multi-division digital campaign covering two flagship consumer sectors: Premium Spirits and Modern Fashion. Delivering bespoke editorial visual design and dynamic vertical video storytelling across Facebook and TikTok to accelerate brand prestige and retail footfall.
-              </p>
-              <div class="space-y-2 text-xs text-charcoal font-mono border-t border-border pt-4">
-                <div class="flex justify-between py-1 border-b border-border">
-                  <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-stack text-xs"></i> Creative Scope:</span>
-                  <span class="font-semibold">Integrated Brand Campaign</span>
-                </div>
-                <div class="flex justify-between py-1 border-b border-border">
-                  <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-split-horizontal text-xs"></i> Divisions:</span>
-                  <span class="font-semibold">Spirits & Retail Fashion</span>
-                </div>
-                <div class="flex justify-between py-1">
-                  <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-video-camera text-xs"></i> Production Formats:</span>
-                  <span class="font-semibold">Editorial Photo & 9:16 Video</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <button onclick="openCaseStudyModal('landmark')" class="btn-primary w-full text-xs">
-                <i class="ph-bold ph-arrow-up-right text-sm"></i>
-                <span>Explore Full Case Study & Strategy</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- METHODOLOGY & 4 CORE PILLARS -->
-  <section id="overview" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
+  <!-- ======================================================================
+       CORE METHODOLOGY : 4 Pillars bento grid (NO eyebrow : max budget used)
+       ====================================================================== -->
+  <section id="overview" class="py-20 border-b" style="border-color: var(--border); background: rgba(14,18,30,0.35)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-16 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="overview_sub">
-          <i class="ph-bold ph-circle-dashed text-xs"></i>
-          <span>Foundations</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="overview_heading">
-          More Than Marketing. We Build Business Growth.
+
+      <div class="mb-14 max-w-2xl reveal">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none mb-4" data-i18n="overview_heading">
+          More than marketing.<br><span class="gradient-text-cyan">We build business growth.</span>
         </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="overview_desc">
-          We reject superficial vanity metrics. By synchronizing creative storytelling, retail presence, and scientific media buying, we help enterprises scale sustainably.
+        <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary)" data-i18n="overview_desc">
+          By synchronizing creative storytelling, retail presence, and scientific media buying, we help enterprises scale sustainably.
         </p>
       </div>
 
-      <!-- 4 Pillars Bento Grid with Distinct Icon Boxes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="bento-card p-6 space-y-4">
-          <div class="icon-box icon-box-yellow icon-box-lg">
+      <!-- 4 Pillars : asymmetric bento: 2-col on md, feature row on lg -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Pillar 1: large feature cell -->
+        <div class="bento-card p-8 md:col-span-2 lg:col-span-1 reveal reveal-delay-1">
+          <div class="icon-box icon-box-lg icon-box-amber mb-5">
             <i class="ph-bold ph-lightbulb-filament"></i>
           </div>
-          <div class="font-mono text-xs text-lightMuted uppercase">Pillar 01</div>
-          <h3 class="font-semibold text-base text-charcoal" data-i18n="pillar_1_title">Creativity</h3>
-          <p class="text-xs text-muted leading-relaxed" data-i18n="pillar_1_desc">
-            Bespoke visual graphic designs, high-converting product shots, engaging copywriting, and viral-ready vertical TikTok short scripts that capture immediate consumer attention.
+          <div class="text-xs font-mono mb-2" style="color: var(--text-tertiary)">Creativity</div>
+          <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)" data-i18n="pillar_1_title">Visual &amp; Content Creation</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="pillar_1_desc">
+            Bespoke visual graphic designs, high-converting product shots, engaging copywriting, and viral-ready vertical TikTok scripts that capture immediate consumer attention.
           </p>
         </div>
 
-        <div class="bento-card p-6 space-y-4">
-          <div class="icon-box icon-box-blue icon-box-lg">
+        <!-- Pillar 2 -->
+        <div class="bento-card p-8 reveal reveal-delay-2">
+          <div class="icon-box icon-box-lg icon-box-cyan mb-5">
             <i class="ph-bold ph-cpu"></i>
           </div>
-          <div class="font-mono text-xs text-lightMuted uppercase">Pillar 02</div>
-          <h3 class="font-semibold text-base text-charcoal" data-i18n="pillar_2_title">Technology</h3>
-          <p class="text-xs text-muted leading-relaxed" data-i18n="pillar_2_desc">
-            Meta Pixel, TikTok Events API, modern conversion tracking, automated lead routing, and scalable landing pages engineered for zero-friction consumer checkouts.
+          <div class="text-xs font-mono mb-2" style="color: var(--text-tertiary)">Technology</div>
+          <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)" data-i18n="pillar_2_title">Data &amp; Tracking Infrastructure</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="pillar_2_desc">
+            Meta Pixel, TikTok Events API, modern conversion tracking, automated lead routing, and scalable landing pages engineered for zero-friction checkouts.
           </p>
         </div>
 
-        <div class="bento-card p-6 space-y-4">
-          <div class="icon-box icon-box-green icon-box-lg">
+        <!-- Pillar 3 -->
+        <div class="bento-card p-8 reveal reveal-delay-3">
+          <div class="icon-box icon-box-lg icon-box-emerald mb-5">
             <i class="ph-bold ph-chart-line-up"></i>
           </div>
-          <div class="font-mono text-xs text-lightMuted uppercase">Pillar 03</div>
-          <h3 class="font-semibold text-base text-charcoal" data-i18n="pillar_3_title">Measurement</h3>
-          <p class="text-xs text-muted leading-relaxed" data-i18n="pillar_3_desc">
-            Transparent monthly KPI reporting, cost-per-result optimization, ROAS calculations, and clear advertising spend performance and growth insights.
+          <div class="text-xs font-mono mb-2" style="color: var(--text-tertiary)">Measurement</div>
+          <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)" data-i18n="pillar_3_title">Transparent KPI Reporting</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="pillar_3_desc">
+            Monthly KPI reporting, cost-per-result optimization, ROAS calculations, and clear advertising spend performance insights.
           </p>
         </div>
 
-        <div class="bento-card p-6 space-y-4">
-          <div class="icon-box icon-box-neutral icon-box-lg">
+        <!-- Pillar 4 -->
+        <div class="bento-card p-8 reveal reveal-delay-4">
+          <div class="icon-box icon-box-lg icon-box-ghost mb-5">
             <i class="ph-bold ph-compass"></i>
           </div>
-          <div class="font-mono text-xs text-lightMuted uppercase">Pillar 04</div>
-          <h3 class="font-semibold text-base text-charcoal" data-i18n="pillar_4_title">Strategy</h3>
-          <p class="text-xs text-muted leading-relaxed" data-i18n="pillar_4_desc">
-            Bridging digital awareness directly into physical in-store retail footfall. Aligning content pillars with actual inventory, promotions, and seasonal shopping cycles.
+          <div class="text-xs font-mono mb-2" style="color: var(--text-tertiary)">Strategy</div>
+          <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)" data-i18n="pillar_4_title">Digital-to-Retail Integration</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="pillar_4_desc">
+            Bridging digital awareness directly into physical in-store retail footfall. Aligning content pillars with actual inventory and seasonal shopping cycles.
           </p>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- SERVICE SUITE WITH ICON HEADERS & ICON BULLETS -->
-  <section id="services" class="py-24 border-b border-border bg-transparent relative">
+  <!-- ======================================================================
+       SERVICES : Capability grid (different layout from pillars : horizontal strip)
+       ====================================================================== -->
+  <section id="services" class="py-20 border-b" style="border-color: var(--border)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-16 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="serv_sub">
-          <i class="ph-bold ph-sparkle text-xs"></i>
-          <span>Capabilities</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="serv_heading">
-          Everything You Need for Digital & Traditional Growth
+
+      <div class="mb-14 max-w-2xl reveal">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none mb-4" data-i18n="serv_heading">
+          Everything you need for<br><span class="gradient-text-cyan">digital &amp; physical growth.</span>
         </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="serv_desc">
-          Structured end-to-end execution. From full outsourced marketing departments to hyper-targeted visual content and performance ad scaling.
+        <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary)" data-i18n="serv_desc">
+          Structured end-to-end execution from outsourced marketing departments to hyper-targeted visual content and performance ad scaling.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Service 1: Strategy -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
+      <!-- Services: 3 feature rows (alternating layout to break repetition) -->
+      <div class="space-y-4 reveal reveal-delay-1">
+
+        <!-- Row 1: Strategy + Creative side by side -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bento-card p-8 flex flex-col gap-4">
             <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-neutral icon-box-lg">
+              <div class="icon-box icon-box-lg icon-box-ghost">
                 <i class="ph-bold ph-compass-tool"></i>
               </div>
-              <span class="badge-neutral font-mono">01 — Strategy</span>
+              <span class="badge-ghost">Strategy</span>
             </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s1_title">Strategy & Consulting</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s1_desc">
-              Holistic growth consulting, market positioning, audience segmentation, competitor analysis, and full sales funnel architecture tailored for the Myanmar business ecosystem.
-            </p>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s1_title">Strategy &amp; Consulting</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s1_desc">
+                Holistic growth consulting, market positioning, audience segmentation, competitor analysis, and full sales funnel architecture for Myanmar brands.
+              </p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-mono" style="color: var(--text-secondary)">
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> Marketing Growth Roadmaps</li>
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> Brand Positioning &amp; Messaging</li>
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> Omnichannel Funnel Planning</li>
+            </ul>
           </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Marketing Growth Roadmaps</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Brand Positioning & Messaging</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Omnichannel Funnel Planning</span></div>
-          </div>
-        </div>
 
-        <!-- Service 2: Creative -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
+          <div class="bento-card p-8 flex flex-col gap-4">
             <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-yellow icon-box-lg">
+              <div class="icon-box icon-box-lg icon-box-amber">
                 <i class="ph-bold ph-paint-brush"></i>
               </div>
-              <span class="badge-neutral font-mono">02 — Creative</span>
+              <span class="badge-amber">Creative</span>
             </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s2_title">Branding & Visual Design</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s2_desc">
-              High-end visual identities that build immediate prestige. From luxury product photography post-production to impactful commercial social banners that halt scrolling thumbs.
-            </p>
-          </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Corporate Guidelines & Identity</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>High-Converting Social Photo Posts</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Luxury 3D Product Visuals</span></div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s2_title">Branding &amp; Visual Design</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s2_desc">
+                High-end visual identities that build immediate prestige. From luxury product photography to impactful commercial social banners that stop scrolling thumbs.
+              </p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-mono" style="color: var(--text-secondary)">
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> Corporate Guidelines &amp; Identity</li>
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> High-Converting Social Posts</li>
+              <li class="flex items-center gap-2"><i class="ph-bold ph-check text-xs" style="color: var(--accent)"></i> Luxury 3D Product Visuals</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Service 3: Channels -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-blue icon-box-lg">
-                <i class="ph-bold ph-chats-circle"></i>
+        <!-- Row 2: Social + Production : full width feature -->
+        <div class="bento-card p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="icon-box icon-box-lg icon-box-cyan">
+                  <i class="ph-bold ph-chats-circle"></i>
+                </div>
+                <span class="badge-cyan">Social</span>
               </div>
-              <span class="badge-neutral font-mono">03 — Channels</span>
-            </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s3_title">Social Media Management</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s3_desc">
-              End-to-end Facebook Page and TikTok account governance. Monthly publishing calendars, persuasive Burmese copywriting, trend-jacking, and community engagement support.
-            </p>
-          </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Monthly Content Calendars</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Burmese & English Copywriting</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Supplementary Community Care</span></div>
-          </div>
-        </div>
-
-        <!-- Service 4: Production -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-red icon-box-lg">
-                <i class="ph-bold ph-video-camera"></i>
+              <div>
+                <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s3_title">Social Media Management</h3>
+                <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s3_desc">
+                  End-to-end Facebook and TikTok account governance. Monthly publishing calendars, persuasive Burmese copywriting, trend-jacking, and community engagement.
+                </p>
               </div>
-              <span class="badge-neutral font-mono">04 — Production</span>
             </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s4_title">TikTok & Reels Video Production</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s4_desc">
-              Full-service 9:16 vertical video production for TikTok and Facebook Reels. Concept drafting, scriptwriting, on-site cinematography, studio lighting, talent coordination, and editing.
-            </p>
-          </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>9:16 Vertical HD Short Form</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Scriptwriting & Viral Hooks</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>On-Site Filming Crew & Lighting</span></div>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="icon-box icon-box-lg icon-box-rose">
+                  <i class="ph-bold ph-video-camera"></i>
+                </div>
+                <span class="badge-ghost">Production</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s4_title">TikTok &amp; Reels Video Production</h3>
+                <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s4_desc">
+                  Full-service 9:16 vertical video for TikTok and Facebook Reels. Concept drafting, scriptwriting, on-site cinematography, studio lighting, and editing.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Service 5: Performance -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
+        <!-- Row 3: Performance + Retail : compact horizontal cells -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bento-card p-8 flex flex-col gap-4">
             <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-green icon-box-lg">
+              <div class="icon-box icon-box-lg icon-box-emerald">
                 <i class="ph-bold ph-target"></i>
               </div>
-              <span class="badge-neutral font-mono">05 — Performance</span>
+              <span class="badge-emerald">Performance</span>
             </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s5_title">Paid Media Buying & Ads</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s5_desc">
-              Disciplined advertising spend execution across Meta (Facebook/Instagram) and TikTok Ads. Granular audience targeting, retargeting funnels, budget pacing, and ROAS focus.
-            </p>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s5_title">Paid Media Buying &amp; Ads</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s5_desc">
+                Disciplined advertising spend across Meta and TikTok Ads. Granular audience targeting, retargeting funnels, budget pacing, and ROAS focus.
+              </p>
+            </div>
           </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Meta & TikTok Campaign Setup</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Cost-Per-Result Optimization</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Monthly Spend Auditing</span></div>
-          </div>
-        </div>
 
-        <!-- Service 6: Retail -->
-        <div class="bento-card p-8 flex flex-col justify-between">
-          <div class="space-y-4">
+          <div class="bento-card p-8 flex flex-col gap-4">
             <div class="flex items-center justify-between">
-              <div class="icon-box icon-box-blue icon-box-lg">
+              <div class="icon-box icon-box-lg icon-box-cyan">
                 <i class="ph-bold ph-storefront"></i>
               </div>
-              <span class="badge-neutral font-mono">06 — Retail</span>
+              <span class="badge-cyan">Retail</span>
             </div>
-            <h3 class="text-lg font-bold text-charcoal" data-i18n="s6_title">Connecting Digital to Retail</h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed" data-i18n="s6_desc">
-              "Online brings them in. Offline turns them into customers." We design in-store POSM, retail promotion concepts, and seasonal launch events that turn followers into footfall.
-            </p>
-          </div>
-          <div class="border-t border-border pt-4 mt-6 text-xs text-charcoal space-y-2 font-mono">
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>In-Store POSM & Merchandising</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Drive-to-Store Funnels</span></div>
-            <div class="flex items-center gap-2"><i class="ph-bold ph-check text-xs text-muted"></i> <span>Unified Customer Experience</span></div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--text-primary)" data-i18n="s6_title">Digital-to-Retail Connection</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="s6_desc">
+                In-store POSM, retail promotion concepts, and seasonal launch events that turn followers into physical retail footfall.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- CASE STUDIES: SELECTED BRAND CAMPAIGNS -->
-  <section id="case-studies" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
+  <!-- ======================================================================
+       CASE STUDIES : Featured enterprise partnerships
+       (image+text split, max 2 zigzag then break with quote block)
+       ====================================================================== -->
+  <section id="case-studies" class="py-20 border-b" style="border-color: var(--border); background: rgba(14,18,30,0.35)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-16 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="cases_sub">
-          <i class="ph-bold ph-briefcase text-xs"></i>
-          <span>Featured Case Studies</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="cases_heading">
-          Enterprise Partnerships & Campaign Showcases
-        </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="cases_subdesc">
-          Strategic multi-channel campaigns, high-impact visual design, and quantifiable brand growth delivered for leading enterprises.
+
+      <!-- Section eyebrow 2 of 3 allowed -->
+      <div class="mb-14 flex items-start justify-between flex-wrap gap-6">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-2 mb-4 text-xs font-mono font-semibold" style="color: var(--text-tertiary)">
+            <i class="ph-bold ph-briefcase text-xs" style="color: var(--accent)"></i>
+            <span>FEATURED WORK</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none" data-i18n="cases_heading">
+            Enterprise partnerships &amp;<br><span class="gradient-text-cyan">campaign showcases.</span>
+          </h2>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs self-end" style="color: var(--text-secondary)" data-i18n="cases_subdesc">
+          Strategic multi-channel campaigns and high-impact visual design for leading Myanmar enterprises.
         </p>
       </div>
 
-      <!-- Case 1: Landmark United Holdings -->
-      <div class="bento-card p-6 sm:p-10 mb-10">
+      <!-- Case 1: Landmark : text left, image right -->
+      <div class="bento-card p-6 sm:p-10 mb-6 reveal">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-7 space-y-5">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="badge-blue font-mono">
-                <i class="ph-bold ph-sparkle text-xs"></i>
-                <span>Integrated Campaign</span>
-              </span>
-              <span class="badge-yellow">
-                <i class="ph-bold ph-broadcast text-xs"></i>
-                <span>Multi-Division Campaign</span>
-              </span>
+              <span class="badge-cyan"><i class="ph-bold ph-sparkle text-xs"></i> Integrated Campaign</span>
+              <span class="badge-amber"><i class="ph-bold ph-broadcast text-xs"></i> Multi-Division</span>
             </div>
-            <h3 class="font-editorial text-3xl text-charcoal">
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--text-primary)">
               Landmark United Holdings: Dual-Division Brand Acceleration
             </h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed">
-              Managing end-to-end creative marketing for two major enterprise divisions: <strong>Liquor & Spirits</strong> and <strong>Fashion & Lifestyle</strong>. Delivering cohesive visual storytelling, editorial photography, and high-impact short videos under a unified brand growth strategy.
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+              Managing end-to-end creative marketing for two major enterprise divisions: <strong style="color: var(--text-primary)">Liquor &amp; Spirits</strong> and <strong style="color: var(--text-primary)">Fashion &amp; Lifestyle</strong>. Cohesive visual storytelling, editorial photography, and high-impact short videos under a unified brand growth strategy.
             </p>
-
-            <div class="grid grid-cols-3 gap-3 border border-border p-4 rounded bg-subtle text-xs font-mono">
+            <div class="grid grid-cols-3 gap-4 p-4 rounded-xl text-xs font-mono border" style="border-color: var(--border); background: var(--surface-subtle)">
               <div>
-                <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-stack text-xs"></i> Core Discipline</span>
-                <span class="font-bold text-charcoal">Visuals & Short Video</span>
+                <span class="block mb-1" style="color: var(--text-tertiary)">Core Discipline</span>
+                <span class="font-bold" style="color: var(--text-primary)">Visuals &amp; Short Video</span>
               </div>
               <div>
-                <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-sparkle text-xs"></i> Brand Impact</span>
-                <span class="font-bold text-charcoal">Prestige & Awareness</span>
+                <span class="block mb-1" style="color: var(--text-tertiary)">Brand Impact</span>
+                <span class="font-bold" style="color: var(--text-primary)">Prestige &amp; Awareness</span>
               </div>
               <div>
-                <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-broadcast text-xs"></i> Channels</span>
-                <span class="font-bold text-charcoal">Meta & TikTok</span>
+                <span class="block mb-1" style="color: var(--text-tertiary)">Channels</span>
+                <span class="font-bold" style="color: var(--text-primary)">Meta &amp; TikTok</span>
               </div>
             </div>
-
-            <div class="pt-2 flex items-center gap-3">
-              <button onclick="openCaseStudyModal('landmark')" class="btn-primary text-xs">
-                <i class="ph-bold ph-arrow-up-right text-sm"></i>
-                <span>View Full Case Study & Strategy</span>
-              </button>
-            </div>
+            <button onclick="openCaseStudyModal('landmark')" class="btn-primary text-sm">
+              <i class="ph-bold ph-arrow-up-right text-sm"></i>
+              View Case Study
+            </button>
           </div>
-
           <div class="lg:col-span-5">
-            <div class="rounded border border-border overflow-hidden bg-canvas cursor-pointer hover:opacity-95 transition-opacity relative group" onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark Liquor Showcase', 'Exclusive creative visuals designed for Landmark United Holdings premium rum & spirits portfolio.')">
+            <div class="rounded-xl border overflow-hidden cursor-pointer relative group" style="border-color: var(--border); background: var(--canvas)"
+                 onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark Liquor Showcase', 'Exclusive creative visuals for Landmark United Holdings premium spirits portfolio.')">
               <img src="portfolio_assets/cases/liquor-lowen-millonario.png" alt="Landmark Case" class="w-full h-auto object-cover" loading="lazy" decoding="async">
-              <div class="absolute bottom-3 right-3 px-2 py-0.5 bg-surface/90 backdrop-blur rounded border border-border text-[10px] font-mono text-charcoal flex items-center gap-1">
-                <i class="ph-bold ph-magnifying-glass text-xs"></i>
-                <span>Zoom</span>
+              <div class="absolute bottom-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded font-mono text-[10px]" style="background: rgba(14,18,30,0.92); border: 1px solid var(--border); color: var(--text-primary)">
+                <i class="ph-bold ph-magnifying-glass text-xs"></i> Zoom
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Case 2: Time Square Trading -->
-      <div class="bento-card p-6 sm:p-10">
+      <!-- Case 2: Time Square : image left, text right (alternate) -->
+      <div class="bento-card p-6 sm:p-10 reveal reveal-delay-1">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-5 order-2 lg:order-1">
-            <div class="rounded border border-border overflow-hidden bg-canvas cursor-pointer hover:opacity-95 transition-opacity relative group" onclick="openLightbox('portfolio_assets/cases/luxury-armani-eyewear-parfum.png', 'Time Square: Luxury Lifestyle & Scent', 'High-impact product campaigns for Armani Exchange and Acqua Di Giò.')">
+            <div class="rounded-xl border overflow-hidden cursor-pointer relative" style="border-color: var(--border); background: var(--canvas)"
+                 onclick="openLightbox('portfolio_assets/cases/luxury-armani-eyewear-parfum.png', 'Time Square: Luxury Lifestyle', 'High-impact campaigns for Armani Exchange and Acqua Di Giò.')">
               <img src="portfolio_assets/cases/luxury-armani-eyewear-parfum.png" alt="Time Square Armani" class="w-full h-auto object-cover" loading="lazy" decoding="async">
-              <div class="absolute bottom-3 right-3 px-2 py-0.5 bg-surface/90 backdrop-blur rounded border border-border text-[10px] font-mono text-charcoal flex items-center gap-1">
-                <i class="ph-bold ph-magnifying-glass text-xs"></i>
-                <span>Zoom</span>
+              <div class="absolute bottom-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded font-mono text-[10px]" style="background: rgba(14,18,30,0.92); border: 1px solid var(--border); color: var(--text-primary)">
+                <i class="ph-bold ph-magnifying-glass text-xs"></i> Zoom
               </div>
             </div>
           </div>
-
           <div class="lg:col-span-7 order-1 lg:order-2 space-y-5">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="badge-green font-mono">
-                <i class="ph-bold ph-storefront text-xs"></i>
-                <span>Retail & Digital Strategy</span>
-              </span>
-              <span class="badge-neutral">
-                <i class="ph-bold ph-tag text-xs"></i>
-                <span>Retail Synergy</span>
-              </span>
+              <span class="badge-emerald"><i class="ph-bold ph-storefront text-xs"></i> Retail &amp; Digital</span>
+              <span class="badge-ghost"><i class="ph-bold ph-tag text-xs"></i> Retail Synergy</span>
             </div>
-            <h3 class="font-editorial text-3xl text-charcoal">
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight" style="color: var(--text-primary)">
               Time Square Trading: Synchronizing Digital Content with Retail Footfall
             </h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed">
-              Bridging online product discovery with physical retail customer journeys for premium retail fashion and fragrance brands (including Armani Exchange and Giorgio Armani).
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+              Bridging online product discovery with physical retail customer journeys for premium fashion and fragrance brands, including Armani Exchange and Giorgio Armani.
             </p>
-
-            <blockquote class="p-4 border-l-2 border-charcoal bg-subtle text-xs text-charcoal font-medium italic flex items-start gap-2">
-              <i class="ph-bold ph-quotes text-base text-muted shrink-0 mt-0.5"></i>
-              <span>"Online brings them in. Offline turns them into customers. The Creative attracts attention. The Media reaches the right audience. The Data tells us what to improve."</span>
+            <blockquote class="p-4 rounded-xl border-l-2 text-sm italic flex items-start gap-2" style="background: var(--surface-subtle); border-color: var(--accent); color: var(--text-primary)">
+              <i class="ph-bold ph-quotes text-base shrink-0 mt-0.5" style="color: var(--accent)"></i>
+              <span>"Online brings them in. Offline turns them into customers. Creative attracts attention. Media reaches the right audience. Data tells us what to improve."</span>
             </blockquote>
           </div>
         </div>
@@ -620,395 +519,360 @@
     </div>
   </section>
 
-  <!-- CURATED PORTFOLIO GALLERY WITH ICONIZED CATEGORY PILLS -->
-  <section id="portfolio" class="py-24 border-b border-border bg-transparent relative">
+  <!-- ======================================================================
+       PORTFOLIO GALLERY : filtered grid (3rd distinct layout family)
+       ====================================================================== -->
+  <section id="portfolio" class="py-20 border-b" style="border-color: var(--border)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-12 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="port_sub">
-          <i class="ph-bold ph-images text-xs"></i>
-          <span>Creative Registry</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="port_heading">
-          Creative Works Across Diverse Industries
-        </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="port_desc">
-          Click any project to inspect high-definition visuals, campaign intent, creative direction, and industry vertical.
+
+      <!-- Eyebrow 3 of 3 allowed -->
+      <div class="mb-10 flex flex-wrap items-end justify-between gap-6 reveal">
+        <div>
+          <div class="flex items-center gap-2 mb-3 text-xs font-mono font-semibold" style="color: var(--text-tertiary)">
+            <i class="ph-bold ph-images text-xs" style="color: var(--accent)"></i>
+            <span>CREATIVE REGISTRY</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none" data-i18n="port_heading">
+            Creative works across<br><span class="gradient-text-cyan">diverse industries.</span>
+          </h2>
+        </div>
+        <p class="text-sm max-w-xs" style="color: var(--text-secondary)" data-i18n="port_desc">
+          Click any project to inspect high-definition visuals and campaign intent.
         </p>
       </div>
 
-      <!-- Filter Tag Bar with Refined Phosphor Icons -->
-      <div class="flex flex-wrap items-center gap-2 mb-12">
+      <!-- Filter tags -->
+      <div class="flex flex-wrap items-center gap-2 mb-10 reveal reveal-delay-1">
         <button class="filter-tag active flex items-center gap-1.5" data-category="all">
-          <i class="ph-bold ph-squares-four text-xs"></i>
-          <span>All Disciplines</span>
+          <i class="ph-bold ph-squares-four text-xs"></i> All
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="liquor">
-          <i class="ph-bold ph-brandy text-xs"></i>
-          <span>Liquor & Spirits</span>
+          <i class="ph-bold ph-brandy text-xs"></i> Spirits
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="fashion">
-          <i class="ph-bold ph-t-shirt text-xs"></i>
-          <span>Fashion & Apparel</span>
+          <i class="ph-bold ph-t-shirt text-xs"></i> Fashion
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="luxury">
-          <i class="ph-bold ph-sparkle text-xs"></i>
-          <span>Luxury & Fragrance</span>
+          <i class="ph-bold ph-sparkle text-xs"></i> Luxury
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="fnb">
-          <i class="ph-bold ph-fork-knife text-xs"></i>
-          <span>Food & Beverage</span>
+          <i class="ph-bold ph-fork-knife text-xs"></i> F&amp;B
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="realestate">
-          <i class="ph-bold ph-buildings text-xs"></i>
-          <span>Real Estate & Villas</span>
+          <i class="ph-bold ph-buildings text-xs"></i> Real Estate
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="tech">
-          <i class="ph-bold ph-device-mobile text-xs"></i>
-          <span>Tech & Consumer Electronics</span>
+          <i class="ph-bold ph-device-mobile text-xs"></i> Tech
         </button>
         <button class="filter-tag flex items-center gap-1.5" data-category="corporate">
-          <i class="ph-bold ph-hard-hat text-xs"></i>
-          <span>Construction & Corporate</span>
+          <i class="ph-bold ph-hard-hat text-xs"></i> Corporate
         </button>
       </div>
 
-      <!-- Portfolio Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolioGrid">
+      <!-- Portfolio grid : 3 col -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="portfolioGrid">
 
-        <!-- 1: Liquor -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="liquor">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-building text-xs"></i> Landmark</span>
-            <span class="badge-yellow"><i class="ph-bold ph-brandy text-xs"></i> Spirits</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-1" data-category="liquor">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-building text-xs"></i> Landmark</span>
+            <span class="badge-amber"><i class="ph-bold ph-brandy text-xs"></i> Spirits</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark Liquor: Löwen Samt & Ron Millonario 15', 'Exclusive creative series for Landmark United Holdings imported rum portfolio.')">
-            <img src="portfolio_assets/cases/liquor-lowen-millonario.png" alt="Liquor Visuals" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/liquor-lowen-millonario.png', 'Landmark Liquor: Löwen Samt &amp; Ron Millonario 15', 'Exclusive creative series for Landmark United Holdings imported rum portfolio.')">
+            <img src="portfolio_assets/cases/liquor-lowen-millonario.png" alt="Liquor Visuals" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Elevating Every Occasion Through Premium Spirits</h4>
-            <p class="text-xs text-muted">Amber lighting and bold Burmese luxury typography for imported rum.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Elevating Every Occasion Through Premium Spirits</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Amber lighting and bold Burmese luxury typography for imported rum.</p>
           </div>
         </div>
 
-        <!-- 2: Fashion Consuo -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="fashion">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-tag text-xs"></i> Consuo & Monic</span>
-            <span class="badge-blue"><i class="ph-bold ph-t-shirt text-xs"></i> Fashion</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-2" data-category="fashion">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-tag text-xs"></i> Consuo &amp; Monic</span>
+            <span class="badge-cyan"><i class="ph-bold ph-t-shirt text-xs"></i> Fashion</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/fashion-consuo-monic.png', 'Trend-Setting Lifestyle Marketing for Fashion', 'Minimalist, cloud-textured apparel social campaigns for CONSUO hoodie & MONIC polo collections.')">
-            <img src="portfolio_assets/cases/fashion-consuo-monic.png" alt="Fashion Visuals" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/fashion-consuo-monic.png', 'Trend-Setting Lifestyle Marketing for Fashion', 'Minimalist apparel campaigns for CONSUO hoodie &amp; MONIC polo.')">
+            <img src="portfolio_assets/cases/fashion-consuo-monic.png" alt="Fashion Visuals" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Trend-Setting Lifestyle Marketing for Fashion</h4>
-            <p class="text-xs text-muted">Editorial-grade composition with atmospheric textures and clean typography.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Trend-Setting Lifestyle Marketing for Fashion</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Editorial composition with atmospheric textures and clean typography.</p>
           </div>
         </div>
 
-        <!-- 3: Armani Belt -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="luxury">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-storefront text-xs"></i> Time Square</span>
-            <span class="badge-neutral"><i class="ph-bold ph-sparkle text-xs"></i> Retail</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-3" data-category="luxury">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-storefront text-xs"></i> Time Square</span>
+            <span class="badge-ghost"><i class="ph-bold ph-sparkle text-xs"></i> Retail</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/luxury-armani-belt.png', 'Elevating Everyday Style: Armani Exchange Details', 'Sophisticated accessory product showcases for Time Square Trading.')">
-            <img src="portfolio_assets/cases/luxury-armani-belt.png" alt="Armani Belt" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/luxury-armani-belt.png', 'Armani Exchange: Signature Details', 'Sophisticated accessory showcases for Time Square Trading.')">
+            <img src="portfolio_assets/cases/luxury-armani-belt.png" alt="Armani Belt" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Elevating Everyday Style Through Signature Details</h4>
-            <p class="text-xs text-muted">Armani Exchange leatherwear and luxury lifestyle retail campaign.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Elevating Everyday Style Through Signature Details</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Armani Exchange leatherwear and luxury lifestyle retail campaign.</p>
           </div>
         </div>
 
-        <!-- 4: Armani Fragrance -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="luxury">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-storefront text-xs"></i> Time Square</span>
-            <span class="badge-blue"><i class="ph-bold ph-sparkle text-xs"></i> Fragrance</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-4" data-category="luxury">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-storefront text-xs"></i> Time Square</span>
+            <span class="badge-cyan"><i class="ph-bold ph-sparkle text-xs"></i> Fragrance</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/luxury-armani-eyewear-parfum.png', 'Modern Style. Timeless Scent. Signature You.', 'Armani Exchange Eyewear & Giorgio Armani Acqua Di Giò commercial creatives.')">
-            <img src="portfolio_assets/cases/luxury-armani-eyewear-parfum.png" alt="Armani Parfum" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/luxury-armani-eyewear-parfum.png', 'Modern Style. Timeless Scent.', 'Armani Exchange Eyewear &amp; Giorgio Armani Acqua Di Giò.')">
+            <img src="portfolio_assets/cases/luxury-armani-eyewear-parfum.png" alt="Armani Parfum" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Modern Style. Timeless Scent. Signature You.</h4>
-            <p class="text-xs text-muted">High-converting product feature cards highlighting marine freshness and UV protection.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Modern Style. Timeless Scent.</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">High-converting product feature cards highlighting marine freshness and UV protection.</p>
           </div>
         </div>
 
-        <!-- 5: F&B -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="fnb">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-bowl-food text-xs"></i> F&B Brands</span>
-            <span class="badge-yellow"><i class="ph-bold ph-fork-knife text-xs"></i> Culinary</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-5" data-category="fnb">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-bowl-food text-xs"></i> F&amp;B Brands</span>
+            <span class="badge-amber"><i class="ph-bold ph-fork-knife text-xs"></i> Culinary</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/fnb-burger-mohinga.png', 'High-Converting Visuals that Drive F&B Sales', 'Juicy dynamic splash burger creative and authentic Burmese traditional Mohinga showcase.')">
-            <img src="portfolio_assets/cases/fnb-burger-mohinga.png" alt="F&B Visuals" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/fnb-burger-mohinga.png', 'High-Converting F&amp;B Visuals', 'Dynamic splash burger creative and Burmese Mohinga showcase.')">
+            <img src="portfolio_assets/cases/fnb-burger-mohinga.png" alt="F&amp;B Visuals" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">High-Converting Visuals that Drive F&B Sales</h4>
-            <p class="text-xs text-muted">Engineered to trigger instant appetite appeal, direct orders, and viral culinary shares.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">High-Converting Visuals that Drive F&amp;B Sales</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Engineered to trigger instant appetite appeal, direct orders, and viral culinary shares.</p>
           </div>
         </div>
 
-        <!-- 6: Real Estate -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="realestate">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-house-line text-xs"></i> Fauget</span>
-            <span class="badge-green"><i class="ph-bold ph-buildings text-xs"></i> Property</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-6" data-category="realestate">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-house-line text-xs"></i> Fauget</span>
+            <span class="badge-emerald"><i class="ph-bold ph-buildings text-xs"></i> Property</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/realestate-fauget-villas.png', 'Premium Branding that Builds Trust & Authority', 'Fauget Real Estate campaign visuals communicating architectural prestige and high-value property acquisition.')">
-            <img src="portfolio_assets/cases/realestate-fauget-villas.png" alt="Real Estate" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/realestate-fauget-villas.png', 'Premium Branding for Real Estate', 'Fauget Real Estate campaign visuals communicating prestige and high-value acquisition.')">
+            <img src="portfolio_assets/cases/realestate-fauget-villas.png" alt="Real Estate" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Premium Branding That Builds Trust & Authority</h4>
-            <p class="text-xs text-muted">High-net-worth investor appeals with luxurious sunset architectural vistas.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Premium Branding That Builds Trust</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">High-net-worth investor appeals with luxurious architectural vistas.</p>
           </div>
         </div>
 
-        <!-- 7: Tech Gadgets -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="tech">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-headphones text-xs"></i> Audio Brand</span>
-            <span class="badge-blue"><i class="ph-bold ph-device-mobile text-xs"></i> Tech</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal" data-category="tech">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-headphones text-xs"></i> Audio Brand</span>
+            <span class="badge-cyan"><i class="ph-bold ph-device-mobile text-xs"></i> Tech</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/tech-audio-gadgets.png', 'Dynamic Product Highlights for Tech Brands', 'Futuristic soundwave campaign for premium headphones, bluetooth speakers & recording mics.')">
-            <img src="portfolio_assets/cases/tech-audio-gadgets.png" alt="Tech Gadgets" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/tech-audio-gadgets.png', 'Dynamic Product Highlights for Tech Brands', 'Futuristic soundwave campaign for premium headphones and speakers.')">
+            <img src="portfolio_assets/cases/tech-audio-gadgets.png" alt="Tech Gadgets" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Dynamic Product Highlights for Tech Brands</h4>
-            <p class="text-xs text-muted">Immersive soundwave atmosphere designed to emphasize acoustic fidelity.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Dynamic Product Highlights for Tech Brands</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Immersive soundwave atmosphere designed to emphasize acoustic fidelity.</p>
           </div>
         </div>
 
-        <!-- 8: Construction -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="corporate">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-wrench text-xs"></i> Marga</span>
-            <span class="badge-neutral"><i class="ph-bold ph-hard-hat text-xs"></i> Engineering</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-1" data-category="corporate">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-wrench text-xs"></i> Marga</span>
+            <span class="badge-ghost"><i class="ph-bold ph-hard-hat text-xs"></i> Engineering</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/construction-marga.png', 'Solid Corporate Identity Designs for Construction Firms', 'Marga Construction architectural trust campaign establishing engineering reliability.')">
-            <img src="portfolio_assets/cases/construction-marga.png" alt="Construction" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/construction-marga.png', 'Corporate Identity for Construction', 'Marga Construction architectural trust campaign.')">
+            <img src="portfolio_assets/cases/construction-marga.png" alt="Construction" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Corporate Identity for Construction Firms</h4>
-            <p class="text-xs text-muted">Conveying structural permanence, precision engineering, and consumer trust.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Corporate Identity for Construction Firms</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Conveying structural permanence, precision engineering, and consumer trust.</p>
           </div>
         </div>
 
-        <!-- 9: Multi-Industry Bento -->
-        <div class="portfolio-item bento-card overflow-hidden" data-category="tech">
-          <div class="p-3 bg-subtle border-b border-border flex justify-between items-center text-[11px] font-mono">
-            <span class="text-muted flex items-center gap-1"><i class="ph-bold ph-grid-four text-xs"></i> Multi-Brand</span>
-            <span class="badge-neutral"><i class="ph-bold ph-intersect text-xs"></i> Matrix</span>
+        <div class="portfolio-item bento-card overflow-hidden reveal reveal-delay-2" data-category="tech">
+          <div class="p-3 border-b flex justify-between items-center text-[11px] font-mono" style="border-color: var(--border); background: var(--surface-subtle)">
+            <span style="color: var(--text-tertiary)"><i class="ph-bold ph-grid-four text-xs"></i> Multi-Brand</span>
+            <span class="badge-ghost"><i class="ph-bold ph-intersect text-xs"></i> Matrix</span>
           </div>
-          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/multi-industry-bento.png', 'Cross-Industry Campaign Matrix', 'Showcasing AK Cell (Honor/Samsung/Dell), MES Education, and Wellness Spa creative.')">
-            <img src="portfolio_assets/cases/multi-industry-bento.png" alt="Multi Industry" class="w-full h-56 object-cover hover:opacity-90 transition-opacity" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 rounded bg-surface/90 text-charcoal font-mono text-xs flex items-center gap-1 shadow-sm"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
+          <div class="relative group cursor-pointer" onclick="openLightbox('portfolio_assets/cases/multi-industry-bento.png', 'Cross-Industry Campaign Matrix', 'AK Cell (Honor/Samsung/Dell), MES Education, and Wellness Spa creative.')">
+            <img src="portfolio_assets/cases/multi-industry-bento.png" alt="Multi Industry" class="w-full h-52 object-cover transition-opacity hover:opacity-90" loading="lazy" decoding="async">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center" style="background: rgba(0,0,0,0.15)">
+              <span class="px-3 py-1 rounded-full text-xs flex items-center gap-1.5 shadow font-mono" style="background: rgba(14,18,30,0.92); color: var(--text-primary); border: 1px solid var(--border)"><i class="ph-bold ph-magnifying-glass-plus"></i> View</span>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="font-semibold text-sm text-charcoal">Cross-Industry Campaign Matrix</h4>
-            <p class="text-xs text-muted">Dell/Samsung hardware, higher education, and luxury spa wellness.</p>
+          <div class="p-5 space-y-1">
+            <h4 class="font-bold text-sm" style="color: var(--text-primary)">Cross-Industry Campaign Matrix</h4>
+            <p class="text-xs" style="color: var(--text-secondary)">Dell/Samsung hardware, higher education, and luxury spa wellness.</p>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- CLIENT ROSTER -->
-  <section id="clients" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
+  <!-- ======================================================================
+       CLIENTS : Full-width image wall (4th distinct layout)
+       ====================================================================== -->
+  <section id="clients" class="py-20 border-b" style="border-color: var(--border); background: rgba(14,18,30,0.35)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-12 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="clients_sub">
-          <i class="ph-bold ph-buildings text-xs"></i>
-          <span>Trust Registry</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="clients_heading">
-          Our Valued Clients & Partners
+
+      <div class="mb-12 text-center reveal">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none mb-4" data-i18n="clients_heading">
+          Trusted by <span class="gradient-text-cyan">30+ brands</span> across Myanmar.
         </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="clients_desc">
-          Over 30 verified consumer brands, retail chains, and enterprise partners across Myanmar.
+        <p class="text-sm" style="color: var(--text-secondary)" data-i18n="clients_desc">
+          Consumer brands, retail chains, and enterprise partners across multiple verticals.
         </p>
       </div>
 
-      <div class="bento-card p-6 sm:p-8 bg-canvas">
-        <img src="portfolio_assets/clients/client-wall-30plus.png" alt="X Marketing Agency 30+ Valued Clients" class="w-full h-auto rounded border border-border" loading="lazy" decoding="async">
-        <div class="mt-4 text-center">
-          <span class="text-xs text-muted font-mono" data-i18n="clients_caption">
-            Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.
-          </span>
-        </div>
+      <div class="bento-card p-6 sm:p-8 reveal reveal-delay-1">
+        <img src="portfolio_assets/clients/client-wall-30plus.png"
+             alt="X Marketing Agency 30+ Valued Clients"
+             class="w-full h-auto rounded-xl border" style="border-color: var(--border)"
+             loading="lazy" decoding="async">
+        <p class="mt-5 text-center text-xs font-mono" style="color: var(--text-tertiary)" data-i18n="clients_caption">
+          Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.
+        </p>
       </div>
-
     </div>
   </section>
 
-  <!-- OPERATIONAL WORKFLOW WITH ICONIZED STEPS -->
-  <section id="workflow" class="py-24 border-b border-border bg-transparent relative">
+  <!-- ======================================================================
+       WORKFLOW : Flush grid (5th distinct layout)
+       ====================================================================== -->
+  <section id="workflow" class="py-20 border-b" style="border-color: var(--border)">
     <div class="content-constraint">
-      
-      <div class="max-w-3xl mb-16 space-y-3">
-        <span class="font-mono text-xs uppercase text-lightMuted tracking-wider flex items-center gap-1.5" data-i18n="wf_sub">
-          <i class="ph-bold ph-shield-check text-xs"></i>
-          <span>Creative Operations</span>
-        </span>
-        <h2 class="font-editorial text-4xl sm:text-5xl text-charcoal" data-i18n="wf_heading">
-          6-Step Production Workflow & Creative Standards
+
+      <div class="mb-14 max-w-2xl reveal">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none mb-4" data-i18n="wf_heading">
+          6-Step production workflow<br><span class="gradient-text-cyan">and creative standards.</span>
         </h2>
-        <p class="text-sm sm:text-base text-muted" data-i18n="wf_desc">
-          We operate with agency discipline. Every project follows our structured creative process, brand alignment checks, and platform compliance guidelines.
+        <p class="text-sm leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf_desc">
+          Agency discipline on every project: structured creative process, brand alignment, and platform compliance.
         </p>
       </div>
 
-      <!-- 6-Step Chain with Icon Boxes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-neutral">
+      <!-- Workflow: flush grid (no card borders : only outer container) -->
+      <div class="workflow-grid reveal reveal-delay-1">
+
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-ghost">
               <i class="ph-bold ph-compass text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 01</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">01</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Brand Immersion & Strategy</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            In-depth alignment on brand positioning, audience personas, visual tone of voice, and core campaign objectives.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Phase: Discovery</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf1_title">Brand Immersion</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf1_desc">In-depth alignment on brand positioning, audience personas, visual tone of voice, and campaign objectives.</p>
         </div>
 
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-blue">
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-cyan">
               <i class="ph-bold ph-lightbulb text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 02</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">02</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Concept & Script Development</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            Developing moodboards, art-directed visual concepts, compelling Burmese/English copy, and vertical video scripts with viral hooks.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Phase: Creative Planning</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf2_title">Concept &amp; Script Development</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf2_desc">Moodboards, art-directed visual concepts, Burmese/English copy, and vertical video scripts with viral hooks.</p>
         </div>
 
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-green">
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-emerald">
               <i class="ph-bold ph-check-circle text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 03</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">03</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Collaborative Alignment</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            Iterative creative alignment and feedback ensuring all drafts strictly reflect brand elegance, tone of voice, and platform policies.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Phase: Alignment</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf3_title">Collaborative Alignment</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf3_desc">Iterative feedback ensuring all drafts reflect brand elegance, tone of voice, and platform policies.</p>
         </div>
 
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-red">
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-rose">
               <i class="ph-bold ph-video-camera text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 04</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">04</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Production & Cinematography</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            Dedicated on-location and studio shooting with high-end camera rigs, professional lighting, and art direction for 9:16 vertical video.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Phase: Production</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf4_title">Production &amp; Cinematography</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf4_desc">On-location and studio shooting with high-end camera rigs, professional lighting, and 9:16 art direction.</p>
         </div>
 
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-yellow">
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-amber">
               <i class="ph-bold ph-paint-brush text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 05</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">05</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Post-Production & Refinement</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            High-end editorial color grading, typography styling, custom audio engineering, and fine retouching for a flawless finish.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Phase: Craft & Polish</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf5_title">Post-Production &amp; Polish</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf5_desc">Editorial color grading, typography styling, custom audio engineering, and fine retouching.</p>
         </div>
 
-        <div class="bento-card p-6 space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="icon-box icon-box-neutral">
+        <div class="workflow-step">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="icon-box icon-box-ghost">
               <i class="ph-bold ph-chart-line-up text-sm"></i>
             </div>
-            <span class="badge-neutral font-mono">Step 06</span>
+            <span class="text-xs font-mono" style="color: var(--accent)">06</span>
           </div>
-          <h4 class="font-bold text-sm text-charcoal">Launch & Growth Analytics</h4>
-          <p class="text-xs text-muted leading-relaxed">
-            Synchronized multi-channel deployment across Meta and TikTok, active ad audience scaling, and comprehensive performance insights.
-          </p>
-          <span class="text-[11px] font-mono text-lightMuted block pt-1">Party: X Marketing Agency</span>
+          <h4 class="font-bold text-sm mb-2" style="color: var(--text-primary)" data-i18n="wf6_title">Launch &amp; Growth Analytics</h4>
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)" data-i18n="wf6_desc">Multi-channel deployment across Meta and TikTok, active ad audience scaling, and performance insights.</p>
         </div>
 
       </div>
 
-      <!-- Accordion FAQ -->
-      <div class="border-t border-border pt-12 max-w-3xl">
-        <h3 class="font-editorial text-2xl text-charcoal mb-6 flex items-center gap-2">
-          <i class="ph-bold ph-question text-xl text-muted"></i>
-          <span>Frequently Addressed Questions</span>
+      <!-- FAQ : separate block, different rhythm -->
+      <div class="mt-16 max-w-3xl reveal reveal-delay-2">
+        <h3 class="text-xl font-bold mb-6 flex items-center gap-2" style="color: var(--text-primary)">
+          <i class="ph-bold ph-question text-lg" style="color: var(--accent)"></i>
+          Frequently Asked
         </h3>
 
         <div class="accordion-item">
           <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>What is the standard production turnaround from brief to delivery?</span>
-            <span class="font-mono text-base">+</span>
+            <span>What is the standard production turnaround?</span>
+            <span class="font-mono text-base" style="color: var(--accent)">+</span>
           </button>
           <div class="accordion-content">
-            Our creative content cycles operate on a structured 30-day rhythm. Following initial brief alignment, monthly content calendars, visual designs, and video scripts are submitted within the first 5–7 business days. Upon approval, our crew executes on-location filming, followed by post-production editing, color grading, and scheduled multi-channel publishing.
+            Our creative content cycles operate on a structured 30-day rhythm. Following initial brief alignment, monthly content calendars, visual designs, and video scripts are submitted within the first 5-7 business days. Upon approval, our crew executes on-location filming, followed by post-production editing, color grading, and scheduled multi-channel publishing.
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>What happens if Meta or TikTok restricts an ad category (e.g. alcohol)?</span>
-            <span class="font-mono text-base">+</span>
+            <span>What happens if Meta or TikTok restricts an ad category?</span>
+            <span class="font-mono text-base" style="color: var(--accent)">+</span>
           </button>
           <div class="accordion-content">
-            We conduct pre-publication compliance reviews. For regulated sectors such as liquor or branded retail, content copy and visuals are structured to pass organic engagement standards, while paid media spend is routed through compliant awareness strategies adhering strictly to local laws and platform community guidelines.
+            We conduct pre-publication compliance reviews. For regulated sectors such as liquor or branded retail, content copy and visuals are structured to pass organic engagement standards, while paid media spend is routed through compliant awareness strategies adhering to local laws and platform community guidelines.
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>How do you maintain visual consistency across digital channels and physical retail?</span>
-            <span class="font-mono text-base">+</span>
+            <span>How do you maintain visual consistency across digital and physical retail?</span>
+            <span class="font-mono text-base" style="color: var(--accent)">+</span>
           </button>
           <div class="accordion-content">
             We develop standardized aesthetic guidelines, curated color grading curves, and bespoke typography systems. This ensures every social media photo, vertical video, and physical retail POSM material presents a unified, premium brand presence.
@@ -1016,133 +880,121 @@
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- CONTACT & ENGAGEMENT FOOTER -->
-  <footer id="contact" class="py-24 bg-surface/40 border-t border-border relative">
+  <!-- ======================================================================
+       CONTACT : Split layout (6th distinct: narrow contact + wide form)
+       ====================================================================== -->
+  <footer id="contact" class="py-20 border-t" style="border-color: var(--border); background: rgba(14,18,30,0.5)">
     <div class="content-constraint">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-border">
-        
-        <div class="lg:col-span-5 space-y-6">
-          <div class="space-y-2">
-            <span class="badge-neutral font-mono">
-              <i class="ph-bold ph-paper-plane-tilt text-xs"></i>
-              <span>Contact Coordinates</span>
-            </span>
-            <h3 class="font-editorial text-3xl text-charcoal">
-              Initiate a Strategic Partnership
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b" style="border-color: var(--border)">
+
+        <!-- Left: Contact info : no duplicate CTA intent with nav -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <!-- Eyebrow budget is exhausted : NO eyebrow here -->
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-3" style="color: var(--text-primary)">
+              Initiate a strategic<br><span class="gradient-text-cyan">partnership.</span>
             </h3>
-            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
               Reach out directly to our lead strategy team. We will review your brand's growth goals and discuss creative opportunities within 24 hours.
             </p>
           </div>
 
-          <div class="space-y-3 text-xs font-mono">
+          <div class="space-y-4 text-xs font-mono">
             <div class="flex items-center gap-3">
-              <div class="icon-box">
+              <div class="icon-box icon-box-cyan">
                 <i class="ph-bold ph-phone text-xs"></i>
               </div>
               <div>
-                <span class="text-lightMuted block text-[11px]">Telephone Hotline:</span>
-                <a href="tel:+959767157172" class="text-charcoal font-semibold hover:underline">(+95) 9 767 157 172</a>
+                <span class="block text-[11px] mb-0.5" style="color: var(--text-tertiary)">Telephone</span>
+                <a href="tel:+959767157172" class="font-semibold hover:underline" style="color: var(--text-primary)">(+95) 9 767 157 172</a>
               </div>
             </div>
-
             <div class="flex items-center gap-3">
-              <div class="icon-box">
+              <div class="icon-box icon-box-ghost">
                 <i class="ph-bold ph-envelope-simple text-xs"></i>
               </div>
               <div>
-                <span class="text-lightMuted block text-[11px]">Electronic Mail:</span>
-                <a href="mailto:contact@xmarketing.asia" class="text-charcoal font-semibold hover:underline">contact@xmarketing.asia</a>
+                <span class="block text-[11px] mb-0.5" style="color: var(--text-tertiary)">Email</span>
+                <a href="mailto:contact@xmarketing.asia" class="font-semibold hover:underline" style="color: var(--text-primary)">contact@xmarketing.asia</a>
               </div>
             </div>
-
             <div class="flex items-center gap-3">
-              <div class="icon-box">
+              <div class="icon-box icon-box-ghost">
                 <i class="ph-bold ph-facebook-logo text-xs"></i>
               </div>
               <div>
-                <span class="text-lightMuted block text-[11px]">Facebook Network:</span>
-                <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" rel="noopener noreferrer" class="text-charcoal font-semibold hover:underline">@XMarketingAgencyAsia</a>
+                <span class="block text-[11px] mb-0.5" style="color: var(--text-tertiary)">Facebook</span>
+                <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline" style="color: var(--text-primary)">@XMarketingAgencyAsia</a>
               </div>
             </div>
-
             <div class="flex items-center gap-3">
-              <div class="icon-box">
+              <div class="icon-box icon-box-ghost">
                 <i class="ph-bold ph-map-pin text-xs"></i>
               </div>
               <div>
-                <span class="text-lightMuted block text-[11px]">Operational Base:</span>
-                <span class="text-charcoal">Yangon, Myanmar</span>
+                <span class="block text-[11px] mb-0.5" style="color: var(--text-tertiary)">Location</span>
+                <span style="color: var(--text-primary)">Yangon, Myanmar</span>
               </div>
             </div>
           </div>
 
-          <div class="pt-2 flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 pt-2">
             <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" class="btn-secondary text-xs py-1.5 px-3">
-              <i class="ph-bold ph-chat-circle-dots text-sm"></i>
-              <span>Facebook Messenger</span>
+              <i class="ph-bold ph-chat-circle-dots text-sm"></i> Facebook Messenger
             </a>
             <a href="viber://chat?number=%2B959767157172" class="btn-secondary text-xs py-1.5 px-3">
-              <i class="ph-bold ph-chats-teardrop text-sm"></i>
-              <span>Viber</span>
-            </a>
-            <a href="tel:+959767157172" class="btn-primary text-xs py-1.5 px-3">
-              <i class="ph-bold ph-phone text-sm"></i>
-              <span>Call Direct</span>
+              <i class="ph-bold ph-chats-teardrop text-sm"></i> Viber
             </a>
           </div>
         </div>
 
-        <div class="lg:col-span-7">
-          <div class="bento-card p-6 sm:p-8 bg-surface">
-            <h4 class="font-bold text-sm text-charcoal mb-1 flex items-center gap-1.5">
-              <i class="ph-bold ph-note-pencil text-sm"></i>
-              <span>Direct Consultation Request</span>
+        <!-- Right: Consultation form -->
+        <div class="lg:col-span-7 reveal reveal-delay-1">
+          <div class="bento-card p-6 sm:p-8">
+            <h4 class="font-bold text-sm mb-1 flex items-center gap-2" style="color: var(--text-primary)">
+              <i class="ph-bold ph-note-pencil text-sm" style="color: var(--accent)"></i>
+              Direct Consultation Request
             </h4>
-            <p class="text-xs text-muted mb-6">Fill out this brief to receive a customized scope analysis.</p>
+            <p class="text-xs mb-6" style="color: var(--text-secondary)">Fill out this brief to receive a customized scope analysis.</p>
 
             <form id="consultationForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-mono text-muted mb-1">Name / Title</label>
-                  <input type="text" required placeholder="e.g. Sithu Aung" class="w-full px-3 py-2 rounded bg-subtle border border-border text-xs text-charcoal focus:outline-none focus:border-charcoal">
+                  <label class="form-label">Name / Title</label>
+                  <input type="text" required placeholder="e.g. Sithu Aung" class="form-field">
                 </div>
                 <div>
-                  <label class="block text-xs font-mono text-muted mb-1">Organization / Brand</label>
-                  <input type="text" required placeholder="e.g. Landmark United / Retail Co." class="w-full px-3 py-2 rounded bg-subtle border border-border text-xs text-charcoal focus:outline-none focus:border-charcoal">
+                  <label class="form-label">Organization / Brand</label>
+                  <input type="text" required placeholder="e.g. Landmark United" class="form-field">
                 </div>
               </div>
-
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-mono text-muted mb-1">Phone / Viber Contact</label>
-                  <input type="tel" required placeholder="09xxxxxxxxx" class="w-full px-3 py-2 rounded bg-subtle border border-border text-xs text-charcoal focus:outline-none focus:border-charcoal">
+                  <label class="form-label">Phone / Viber Contact</label>
+                  <input type="tel" required placeholder="09xxxxxxxxx" class="form-field">
                 </div>
                 <div>
-                  <label class="block text-xs font-mono text-muted mb-1">Selected Focus</label>
-                  <select class="w-full px-3 py-2 rounded bg-subtle border border-border text-xs text-charcoal focus:outline-none focus:border-charcoal">
+                  <label class="form-label">Selected Focus</label>
+                  <select class="form-field">
                     <option>Full-Service Integrated Campaign</option>
-                    <option>Social Media Management (Growth)</option>
+                    <option>Social Media Management</option>
                     <option>TikTok Short Video Production</option>
-                    <option>Paid Media Buying & Ads</option>
-                    <option>Full Outsourced Marketing Department</option>
+                    <option>Paid Media Buying &amp; Ads</option>
+                    <option>Outsourced Marketing Department</option>
                   </select>
                 </div>
               </div>
-
               <div>
-                <label class="block text-xs font-mono text-muted mb-1">Scope Details</label>
-                <textarea rows="3" placeholder="Briefly state your current channels, product categories, and marketing targets..." class="w-full px-3 py-2 rounded bg-subtle border border-border text-xs text-charcoal focus:outline-none focus:border-charcoal"></textarea>
+                <label class="form-label">Scope Details</label>
+                <textarea rows="3" placeholder="Briefly describe your channels, product categories, and marketing targets..." class="form-field"></textarea>
               </div>
-
-              <button type="submit" class="btn-primary w-full text-xs">
+              <button type="submit" class="btn-primary w-full">
                 <i class="ph-bold ph-paper-plane-tilt text-sm"></i>
-                <span>Submit Partnership Inquiry</span>
+                Submit Partnership Inquiry
               </button>
             </form>
           </div>
@@ -1150,175 +1002,146 @@
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-lightMuted font-mono gap-4">
-        <div>
-          © 2026 X Marketing Agency Asia. Registered business entity in Myanmar.
-        </div>
+      <!-- Footer bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono gap-4" style="color: var(--text-tertiary)">
+        <div>© 2026 X Marketing Agency Asia. Registered business entity in Myanmar.</div>
         <div class="flex items-center gap-4">
-          <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" class="hover:text-charcoal transition-colors">Facebook Page</a>
-          <span>•</span>
-          <a href="tel:+959767157172" class="hover:text-charcoal transition-colors">Hotline</a>
-          <span>•</span>
-          <a href="mailto:contact@xmarketing.asia" class="hover:text-charcoal transition-colors">Email</a>
+          <a href="https://www.facebook.com/XMarketingAgencyAsia" target="_blank" class="hover:text-white transition-colors">Facebook</a>
+          <span>·</span>
+          <a href="tel:+959767157172" class="hover:text-white transition-colors">Hotline</a>
+          <span>·</span>
+          <a href="mailto:contact@xmarketing.asia" class="hover:text-white transition-colors">Email</a>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       MODERN WEB GUIDANCE: Native <dialog> Elements for Modals
-       Specifications: dialog, light-dismiss-a-dialog, animate-to-from-top-layer
-       ========================================================================== -->
-
-  <!-- LIGHTBOX MODAL DIALOG -->
+  <!-- ======================================================================
+       LIGHTBOX DIALOG
+       ====================================================================== -->
   <dialog id="lightboxDialog" aria-labelledby="lightboxTitle" closedby="any" class="w-full max-w-4xl">
-    <div class="flex flex-col bg-surface border border-border rounded-lg overflow-hidden">
-      
-      <!-- Chrome Header -->
+    <div class="flex flex-col" style="background: var(--surface); border-radius: 16px; overflow: hidden">
       <div class="window-chrome">
         <div class="window-dots">
           <span class="window-dot"></span>
           <span class="window-dot"></span>
           <span class="window-dot"></span>
         </div>
-        <span id="lightboxTitle" class="text-xs font-mono text-charcoal font-semibold">Visual Asset Inspection</span>
-        
+        <span id="lightboxTitle" class="text-xs font-mono font-semibold" style="color: var(--text-primary)">Visual Asset Inspection</span>
         <form method="dialog">
-          <button type="submit" class="p-1 rounded text-muted hover:text-charcoal focus:outline-none" aria-label="Close Dialog">
+          <button type="submit" class="p-1 rounded hover:text-white transition-colors" style="color: var(--text-secondary)" aria-label="Close">
             <i class="ph-bold ph-x text-sm"></i>
           </button>
         </form>
       </div>
-
-      <!-- Image Canvas -->
-      <div class="p-4 sm:p-6 bg-canvas flex items-center justify-center max-h-[70vh] overflow-auto">
-        <img id="lightboxImg" src="" alt="Expanded View" class="max-w-full max-h-[60vh] object-contain rounded border border-border shadow-sm">
+      <div class="p-4 sm:p-6 flex items-center justify-center" style="max-height: 70vh; overflow: auto; background: var(--canvas)">
+        <img id="lightboxImg" src="" alt="Expanded View" class="max-w-full rounded border object-contain" style="max-height: 60vh; border-color: var(--border)">
       </div>
-
-      <!-- Description Footer -->
-      <div class="p-4 bg-surface border-t border-border flex items-center justify-between text-xs font-mono">
-        <p id="lightboxDesc" class="text-muted leading-relaxed max-w-xl"></p>
+      <div class="p-4 border-t flex items-center justify-between text-xs font-mono" style="border-color: var(--border); background: var(--surface)">
+        <p id="lightboxDesc" class="leading-relaxed max-w-xl" style="color: var(--text-secondary)"></p>
         <form method="dialog">
           <button type="submit" class="btn-secondary text-xs py-1 px-2.5">
-            <i class="ph-bold ph-x text-xs"></i>
-            <span>Dismiss</span>
-            <kbd>Esc</kbd>
+            <i class="ph-bold ph-x text-xs"></i> Dismiss <kbd>Esc</kbd>
           </button>
         </form>
       </div>
-
     </div>
   </dialog>
 
-  <!-- CAMPAIGN CASE STUDY DETAILS DIALOG -->
+  <!-- ======================================================================
+       CASE STUDY DIALOG : Landmark
+       ====================================================================== -->
   <dialog id="caseStudyDialog" aria-labelledby="caseStudyTitle" closedby="any" class="w-full max-w-3xl">
-    <div class="flex flex-col bg-surface border border-border rounded-lg overflow-hidden max-h-[88vh]">
-      
+    <div class="flex flex-col" style="background: var(--surface); border-radius: 16px; overflow: hidden; max-height: 88vh">
       <div class="window-chrome">
         <div class="window-dots">
           <span class="window-dot"></span>
           <span class="window-dot"></span>
           <span class="window-dot"></span>
         </div>
-        <span id="caseStudyTitle" class="text-xs font-mono text-charcoal font-semibold">Case Study: Landmark United Holdings — Dual-Division Brand Acceleration</span>
-        
+        <span id="caseStudyTitle" class="text-xs font-mono font-semibold" style="color: var(--text-primary)">Case Study: Landmark United Holdings</span>
         <form method="dialog">
-          <button type="submit" class="p-1 rounded text-muted hover:text-charcoal focus:outline-none" aria-label="Close Dialog">
+          <button type="submit" class="p-1 rounded hover:text-white transition-colors" style="color: var(--text-secondary)" aria-label="Close">
             <i class="ph-bold ph-x text-sm"></i>
           </button>
         </form>
       </div>
 
-      <div class="p-6 sm:p-8 space-y-6 overflow-y-auto text-xs sm:text-sm text-charcoal">
-        
-        <!-- Key Metrics Strip -->
-        <div class="border border-border rounded p-4 bg-subtle grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
-          <div>
-            <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-buildings text-xs"></i> Client:</span>
-            <span class="font-bold">Landmark United</span>
-          </div>
-          <div>
-            <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-squares-four text-xs"></i> Divisions:</span>
-            <span class="font-bold">Spirits & Fashion</span>
-          </div>
-          <div>
-            <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-sparkle text-xs"></i> Strategy:</span>
-            <span class="font-bold text-charcoal">Brand Prestige</span>
-          </div>
-          <div>
-            <span class="text-muted block text-[11px] flex items-center gap-1"><i class="ph-bold ph-broadcast text-xs"></i> Channels:</span>
-            <span class="font-bold text-charcoal">Meta & TikTok</span>
-          </div>
+      <div class="p-6 sm:p-8 space-y-6 overflow-y-auto text-xs sm:text-sm" style="color: var(--text-primary)">
+
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl border font-mono text-xs" style="border-color: var(--border); background: var(--surface-subtle)">
+          <div><span class="block mb-1" style="color: var(--text-tertiary)">Client</span><span class="font-bold">Landmark United</span></div>
+          <div><span class="block mb-1" style="color: var(--text-tertiary)">Divisions</span><span class="font-bold">Spirits &amp; Fashion</span></div>
+          <div><span class="block mb-1" style="color: var(--text-tertiary)">Strategy</span><span class="font-bold" style="color: var(--accent)">Brand Prestige</span></div>
+          <div><span class="block mb-1" style="color: var(--text-tertiary)">Channels</span><span class="font-bold">Meta &amp; TikTok</span></div>
         </div>
 
-        <!-- Strategy & Challenge -->
         <div class="space-y-2">
-          <h4 class="font-bold text-sm text-charcoal flex items-center gap-1.5">
-            <i class="ph-bold ph-target text-sm"></i>
-            <span>1. Challenge & Strategic Growth Blueprint</span>
+          <h4 class="font-bold text-sm flex items-center gap-1.5" style="color: var(--text-primary)">
+            <i class="ph-bold ph-target text-sm" style="color: var(--accent)"></i> Challenge &amp; Strategic Blueprint
           </h4>
-          <p class="text-xs text-muted leading-relaxed">
+          <p class="text-xs leading-relaxed" style="color: var(--text-secondary)">
             Landmark United Holdings needed to establish distinct, commanding market presence across Myanmar for both its premium imported spirits (Löwen Samt, Ron Millonario 15) and its retail apparel lines. X Marketing Agency architected a dual-funnel strategy: combining high-end editorial visual design with short-form vertical videos on TikTok and Facebook Reels to build brand prestige and drive retail customer footfall.
           </p>
         </div>
 
-        <!-- Creative Direction & Visual Pillars -->
         <div class="space-y-3">
-          <h4 class="font-bold text-sm text-charcoal flex items-center gap-1.5">
-            <i class="ph-bold ph-palette text-sm"></i>
-            <span>2. Creative Direction & Visual Pillars</span>
+          <h4 class="font-bold text-sm flex items-center gap-1.5" style="color: var(--text-primary)">
+            <i class="ph-bold ph-palette text-sm" style="color: var(--accent)"></i> Creative Direction &amp; Visual Pillars
           </h4>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="p-4 rounded border border-border bg-subtle/50 space-y-2">
-              <div class="font-semibold text-xs text-charcoal flex items-center gap-1.5">
-                <i class="ph-bold ph-brandy text-xs text-amber-400"></i>
-                <span>Liquor & Spirits (Löwen Samt & Ron Millonario 15)</span>
+            <div class="p-4 rounded-xl border space-y-2" style="border-color: var(--border); background: rgba(255,255,255,0.02)">
+              <div class="font-semibold text-xs flex items-center gap-1.5" style="color: var(--text-primary)">
+                <i class="ph-bold ph-brandy text-xs" style="color: var(--tint-amber-text)"></i>
+                Liquor &amp; Spirits
               </div>
-              <p class="text-xs text-muted leading-relaxed">
-                Warm amber ambient lighting, luxury bottle typography, editorial framing, and historical heritage storytelling that captures European prestige and collector appeal.
+              <p class="text-xs leading-relaxed" style="color: var(--text-secondary)">
+                Warm amber ambient lighting, luxury bottle typography, editorial framing, and historical heritage storytelling capturing European prestige and collector appeal.
               </p>
             </div>
-            <div class="p-4 rounded border border-border bg-subtle/50 space-y-2">
-              <div class="font-semibold text-xs text-charcoal flex items-center gap-1.5">
-                <i class="ph-bold ph-t-shirt text-xs text-cyan-400"></i>
-                <span>Fashion & Apparel (Consuo & Monic)</span>
+            <div class="p-4 rounded-xl border space-y-2" style="border-color: var(--border); background: rgba(255,255,255,0.02)">
+              <div class="font-semibold text-xs flex items-center gap-1.5" style="color: var(--text-primary)">
+                <i class="ph-bold ph-t-shirt text-xs" style="color: var(--accent)"></i>
+                Fashion &amp; Apparel
               </div>
-              <p class="text-xs text-muted leading-relaxed">
-                Minimalist cloud-textured street and lifestyle photography, clean typography, seasonal lookbooks, and high-energy 9:16 vertical transition reels for youthful engagement.
+              <p class="text-xs leading-relaxed" style="color: var(--text-secondary)">
+                Minimalist cloud-textured street photography, clean typography, seasonal lookbooks, and high-energy 9:16 vertical transition reels for youthful engagement.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Production Craft & Art Direction -->
         <div>
-          <h4 class="font-bold text-sm text-charcoal mb-2 flex items-center gap-1.5">
-            <i class="ph-bold ph-sparkle text-sm"></i>
-            <span>3. Production Craft & Art Direction</span>
+          <h4 class="font-bold text-sm mb-2 flex items-center gap-1.5" style="color: var(--text-primary)">
+            <i class="ph-bold ph-sparkle text-sm" style="color: var(--accent)"></i> Production Craft &amp; Art Direction
           </h4>
-          <ul class="space-y-2 text-xs text-muted">
-            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs text-charcoal mt-0.5"></i> <span><strong>Cinematography & Studio Lighting:</strong> Dedicated on-location and studio production crews with specialized lighting rigs and gimbal-stabilized 4K capture.</span></li>
-            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs text-charcoal mt-0.5"></i> <span><strong>Editorial Color Grading & Sound:</strong> Bespoke film-grade color grading, high-end product retouching, and custom sound design tailored for short-form engagement.</span></li>
-            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs text-charcoal mt-0.5"></i> <span><strong>Compliance & Brand Integrity:</strong> Proactive creative vetting against Meta and TikTok advertising policies and regional community guidelines.</span></li>
+          <ul class="space-y-2 text-xs" style="color: var(--text-secondary)">
+            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs mt-0.5" style="color: var(--accent)"></i>
+              <span><strong style="color: var(--text-primary)">Cinematography &amp; Studio Lighting:</strong> Dedicated on-location and studio production with specialized lighting rigs and gimbal-stabilized 4K capture.</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs mt-0.5" style="color: var(--accent)"></i>
+              <span><strong style="color: var(--text-primary)">Editorial Color Grading &amp; Sound:</strong> Film-grade color grading, product retouching, and custom sound design tailored for short-form engagement.</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-xs mt-0.5" style="color: var(--accent)"></i>
+              <span><strong style="color: var(--text-primary)">Compliance &amp; Brand Integrity:</strong> Proactive creative vetting against Meta and TikTok advertising policies and regional community guidelines.</span>
+            </li>
           </ul>
         </div>
-
       </div>
 
-      <div class="p-4 bg-subtle border-t border-border flex justify-end">
+      <div class="p-4 border-t flex justify-end" style="border-color: var(--border); background: var(--surface-subtle)">
         <form method="dialog">
           <button type="submit" class="btn-primary text-xs">
-            <i class="ph-bold ph-x text-xs"></i>
-            <span>Close Case Study</span>
+            <i class="ph-bold ph-x text-xs"></i> Close
           </button>
         </form>
       </div>
-
     </div>
   </dialog>
 
-  <!-- Modern JavaScript -->
+  <!-- App JS -->
   <script src="app.js"></script>
 </body>
 </html>
