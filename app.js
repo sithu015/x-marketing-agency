@@ -17,7 +17,7 @@ const translations = {
     hero_title: "Strategic brand presence across digital & physical retail.",
     hero_desc: "X Marketing Agency partners with consumer brands, conglomerates, and retailers in Myanmar to turn attention into quantifiable commercial growth through disciplined media buying, editorial visual design, and viral short video production.",
     stat_clients_label: "Active Partners",
-    stat_output_label: "Monthly Deliverables Managed",
+    stat_output_label: "Creative Production",
     stat_model_label: "Service Scope",
     hero_cta_portfolio: "Explore Works",
     hero_cta_cases: "Landmark & Time Square Case Studies",
@@ -29,7 +29,7 @@ const translations = {
     pillar_2_title: "Technology",
     pillar_2_desc: "Meta Pixel, TikTok Events API, modern conversion tracking, automated lead routing, and scalable landing pages engineered for zero-friction consumer checkouts.",
     pillar_3_title: "Measurement",
-    pillar_3_desc: "Transparent monthly KPI reporting, cost-per-result optimization, ROAS calculations, and clear advertising spend reconciliation without hidden markups.",
+    pillar_3_desc: "Transparent monthly KPI reporting, cost-per-result optimization, ROAS calculations, and clear advertising spend performance and growth insights.",
     pillar_4_title: "Strategy",
     pillar_4_desc: "Bridging digital awareness directly into physical in-store retail footfall. Aligning content pillars with actual inventory, promotions, and seasonal shopping cycles.",
     serv_sub: "Capabilities",
@@ -42,7 +42,7 @@ const translations = {
     s3_title: "Social Media Management",
     s3_desc: "End-to-end Facebook Page and TikTok account governance. Monthly publishing calendars, persuasive Burmese copywriting, trend-jacking, and community engagement support.",
     s4_title: "TikTok & Reels Video Production",
-    s4_desc: "Full-service 9:16 vertical video production for TikTok and Facebook Reels. Concept drafting, scriptwriting, on-site shooting (2-3 days/mo), talent coordination, and editing.",
+    s4_desc: "Full-service 9:16 vertical video production for TikTok and Facebook Reels. Concept drafting, scriptwriting, on-site cinematography, studio lighting, talent coordination, and editing.",
     s5_title: "Paid Media Buying & Ads",
     s5_desc: "Disciplined advertising spend execution across Meta (Facebook/Instagram) and TikTok Ads. Granular audience targeting, retargeting funnels, budget pacing, and ROAS focus.",
     s6_title: "Connecting Digital to Retail",
@@ -59,7 +59,7 @@ const translations = {
     clients_caption: "Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.",
     wf_sub: "Creative Operations",
     wf_heading: "6-Step Production Workflow & Creative Standards",
-    wf_desc: "We operate with agency discipline. Every deliverable follows our structured review process, brand alignment checks, and platform compliance guidelines."
+    wf_desc: "We operate with agency discipline. Every project follows our structured creative process, brand alignment checks, and platform compliance guidelines."
   },
   my: {
     nav_overview: "ခံယူချက်",
@@ -73,7 +73,7 @@ const translations = {
     hero_title: "Digital နှင့် Retail နှစ်ရပ်လုံးတွင် အမှတ်တံဆိပ်ကို ခိုင်မာစွာ ချဲ့ထွင်ပါ။",
     hero_desc: "X Marketing Agency သည် မြန်မာနိုင်ငံရှိ စီးပွားရေးလုပ်ငန်းကြီးများနှင့် လက်တွဲကာ စည်းကမ်းစနစ်ကျသော ကြော်ငြာစီမံခန့်ခွဲမှု၊ Editorial စတိုင် ဒီဇိုင်းလက်ရာများနှင့် ထိရောက်သော Short Video များဖြင့် အမှန်တကယ် အရောင်းတိုးတက်မှုကို ဖော်ဆောင်ပေးပါသည်။",
     stat_clients_label: "လက်တွဲထားသော မိတ်ဖက်များ",
-    stat_output_label: "လစဉ် စီမံထုတ်လုပ်ပေးသော အကြောင်းအရာများ",
+    stat_output_label: "တီထွင်ဖန်တီးမှု ထုတ်လုပ်မှု",
     stat_model_label: "ဝန်ဆောင်မှု နယ်ပယ်",
     hero_cta_portfolio: "ဒီဇိုင်းလက်ရာများ ကြည့်ရန်",
     hero_cta_cases: "Landmark & Time Square ကမ်ပိန်းများ",
@@ -98,7 +98,7 @@ const translations = {
     s3_title: "Social Media စီမံခန့်ခွဲမှု",
     s3_desc: "Facebook Page နှင့် TikTok Account များကို စဉ်ဆက်မပြတ် စီမံခန့်ခွဲပေးခြင်း၊ လစဉ်အကြောင်းအရာ အစီအစဉ်ရေးဆွဲခြင်း၊ ဆွဲဆောင်မှုရှိသော မြန်မာစာသားများ ရေးသားပေးခြင်း။",
     s4_title: "TikTok & Reels ဗီဒီယို ရိုက်ကူးထုတ်လုပ်မှု",
-    s4_desc: "ဒေါင်လိုက် 9:16 HD ဖော်မတ် ဗီဒီယိုများအတွက် ဇာတ်ညွှန်းရေးသားခြင်း၊ တစ်လလျှင် ၂ ရက်မှ ၃ ရက် ဆိုင်တွင်းအရောက် ရိုက်ကူးရေးအဖွဲ့ဖြင့် ရိုက်ကူးပေးခြင်းနှင့် တည်းဖြတ်ခြင်း။",
+    s4_desc: "ဒေါင်လိုက် 9:16 HD ဖော်မတ် ဗီဒီယိုများအတွက် ဇာတ်ညွှန်းရေးသားခြင်း၊ ဆိုင်တွင်းအရောက် ကျွမ်းကျင်ရိုက်ကူးရေးအဖွဲ့ဖြင့် ရိုက်ကူးပေးခြင်းနှင့် တည်းဖြတ်ခြင်း။",
     s5_title: "Paid Media Buying & ကြော်ငြာစီမံခန့်ခွဲမှု",
     s5_desc: "Meta (Facebook/Instagram) နှင့် TikTok ကြော်ငြာများကို တိကျသော ပစ်မှတ်အုပ်စုထံ အထိရောက်ဆုံး ကုန်ကျစရိတ်ဖြင့် ရောက်ရှိအောင် စီမံမောင်းနှင်ပေးခြင်း။",
     s6_title: "Digital မှ Retail ဆိုင်တွင်းအရောင်းသို့ ချိတ်ဆက်ခြင်း",
@@ -115,7 +115,7 @@ const translations = {
     clients_caption: "Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique စသည့် လုပ်ငန်းများစွာ ပါဝင်ပါသည်။",
     wf_sub: "ဖန်တီးမှု လုပ်ငန်းစဉ်",
     wf_heading: "အဆင့် ၆ ဆင့်ပါ ထုတ်လုပ်မှု လုပ်ငန်းစဉ်နှင့် အရည်အသွေး စံချိန်စံညွှန်းများ",
-    wf_desc: "အဆင့်တိုင်းတွင် စနစ်တကျ ပြန်လည်သုံးသပ်ခြင်း၊ အမှတ်တံဆိပ်နှင့် ကိုက်ညီမှုရှိစေခြင်းနှင့် ပလက်ဖောင်း စည်းမျဉ်းများကို လိုက်နာဆောင်ရွက်ပါသည်။"
+    wf_desc: "လုပ်ငန်းစဉ် အဆင့်တိုင်းတွင် အမှတ်တံဆိပ် ခိုင်မာလှပစေရန် စနစ်တကျ ဖန်တီးတည်ဆောက်ပေးပါသည်။"
   }
 };
 

@@ -18,13 +18,13 @@
 
 ## 🎯 Highlights & Features
 
-- **Warm Editorial Utilitarian Minimalism**: Designed with an ultra-clean bone canvas (`#FBFBFA`), crisp white cards, charcoal typography (`#141413`), 1px precision borders (`#EAEAEA`), and subtle spot pastels (`#F4E8D9`, `#E8F0EA`, `#E8EEF5`).
+- **High-Impact Dark Cyber-Luxury Agency UI**: Designed with a deep obsidian canvas (`#07080D`), atmospheric radial glows, specular glassmorphic bento cards, vibrant neon borders, and gradient typography.
 - **Bilingual Support (MM / EN)**: Real-time toggling between Burmese (မြန်မာဘာသာ) and English across all UI elements, headings, case metrics, and service capabilities. Keyboard shortcut: press `L`.
 - **70+ Curated Phosphor Technical Icons**: Standardized with consistent 20px / 24px bounding boxes, soft rounded backgrounds, and stroke weights (`ph-bold`).
 - **Interactive Bento Grid Showcase**: High-definition category filter across Spirits, Fashion, Luxury Retail, F&B, Real Estate, and Construction with responsive Lightbox inspection.
 - **Native HTML5 `<dialog>` Case Study Modals**: Accessible top-layer overlays with `@starting-style` entry transitions, escape key triggers, and backdrop light-dismissal.
 - **Featured Brand Case Studies**:
-  - **Landmark United Holdings**: Dual-Division Spirits & Fashion brand acceleration with 46 monthly high-impact creative deliverables.
+  - **Landmark United Holdings**: Dual-Division Spirits & Fashion brand acceleration with editorial photography and vertical short-form reels.
   - **Time Square Trading**: Armani Exchange & Giorgio Armani luxury retail footfall activation and digital-to-store synergy.
   - **30+ Enterprise Client Roster**: Real logo showcases across FMCG, Retail, Hospitality, and Fashion.
 
