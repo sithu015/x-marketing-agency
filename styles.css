@@ -1,0 +1,418 @@
+/* X Marketing Agency — Premium Utilitarian Minimalism & Editorial Stylesheet
+   Strict adherence to minimalist-ui, design-taste-frontend, and modern-web-guidance */
+
+:root {
+  --canvas: #FBFBFA;
+  --surface: #FFFFFF;
+  --surface-subtle: #F7F6F3;
+  --border: #EAEAEA;
+  --border-strong: #D4D4D2;
+  
+  --text-primary: #141413;
+  --text-secondary: #6A6A67;
+  --text-tertiary: #92928F;
+  
+  --pastel-blue-bg: #E1F3FE;
+  --pastel-blue-text: #1F6C9F;
+  --pastel-yellow-bg: #FBF3DB;
+  --pastel-yellow-text: #956400;
+  --pastel-green-bg: #EDF3EC;
+  --pastel-green-text: #346538;
+  --pastel-red-bg: #FDEBEC;
+  --pastel-red-text: #9F2F2D;
+  
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Pyidaungsu', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, 'Pyidaungsu', serif;
+  --font-mono: 'Geist Mono', 'SF Mono', Consolas, monospace;
+}
+
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Macro-whitespace and container constraints */
+.content-constraint {
+  max-width: 72rem; /* 1152px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Minimalist Card & Bento Grid */
+.bento-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.bento-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Primary Minimalist Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.625rem 1.125rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2F3437;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.625rem 1.125rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-subtle);
+  border-color: var(--border-strong);
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Filter Tag Pills */
+.filter-tag {
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.375rem 0.875rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-tag:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.filter-tag.active {
+  background: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+}
+
+/* Pastels for badges */
+.badge-blue {
+  background-color: var(--pastel-blue-bg);
+  color: var(--pastel-blue-text);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge-yellow {
+  background-color: var(--pastel-yellow-bg);
+  color: var(--pastel-yellow-text);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge-green {
+  background-color: var(--pastel-green-bg);
+  color: var(--pastel-green-text);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge-neutral {
+  background-color: var(--surface-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Keystroke UI */
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.15rem 0.4rem;
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Minimalist Technical Icon Boxes */
+.icon-box {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: var(--surface-subtle);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.icon-box-lg {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+.icon-box:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.icon-box-blue {
+  background-color: var(--pastel-blue-bg);
+  color: var(--pastel-blue-text);
+  border-color: rgba(31, 108, 159, 0.2);
+}
+
+.icon-box-yellow {
+  background-color: var(--pastel-yellow-bg);
+  color: var(--pastel-yellow-text);
+  border-color: rgba(149, 100, 0, 0.2);
+}
+
+.icon-box-green {
+  background-color: var(--pastel-green-bg);
+  color: var(--pastel-green-text);
+  border-color: rgba(52, 101, 56, 0.2);
+}
+
+.icon-box-red {
+  background-color: var(--pastel-red-bg);
+  color: var(--pastel-red-text);
+  border-color: rgba(159, 47, 45, 0.2);
+}
+
+.icon-box-charcoal {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+}
+
+/* Faux OS Window Chrome Header */
+.window-chrome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1rem;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--border);
+}
+
+.window-dots {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.window-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #E2E2E0;
+}
+
+/* Accordion FAQ Minimalist */
+.accordion-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.accordion-trigger:hover {
+  color: #000000;
+}
+
+.accordion-content {
+  display: none;
+  padding-bottom: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+/* Scroll Entry Subtle Fade */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   MODERN WEB GUIDANCE: Native <dialog> Top Layer Animation
+   Specifications: animate-to-from-top-layer & dialog
+   ========================================================================== */
+
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(20, 20, 19, 0);
+  transition-property: background-color, display, overlay;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-behavior: allow-discrete;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(20, 20, 19, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  @starting-style {
+    background-color: rgba(20, 20, 19, 0);
+  }
+}
+
+dialog {
+  opacity: 0;
+  transform: scale(0.97) translateY(8px);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 0;
+  color: var(--text-primary);
+  max-width: 90vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  
+  transition-property: opacity, transform, display, overlay;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-behavior: allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.97) translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog,
+  .scroll-reveal {
+    transform: none !important;
+    transition-duration: 0.05s !important;
+  }
+  
+  @starting-style {
+    dialog[open] {
+      transform: none !important;
+    }
+  }
+}

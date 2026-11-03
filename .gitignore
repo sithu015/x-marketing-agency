@@ -1,0 +1,17 @@
+# System and caches
+.DS_Store
+Thumbs.db
+*.log
+
+# Raw extraction and temporary PDF dumps
+extracted_data/
+extracted_images/
+rendered_pages/
+extracted_assets/
+*.pdf
+
+# Python virtual environment and cache
+__pycache__/
+*.pyc
+.venv/
+env/
