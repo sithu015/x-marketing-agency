@@ -24,7 +24,7 @@ const translations = {
     stat_output_label: "Monthly Deliverables Managed",
     stat_model_label: "Partnership Structure",
     hero_cta_portfolio: "Explore Works",
-    hero_cta_cases: "Landmark & Time Square Case Files",
+    hero_cta_cases: "Landmark & Time Square Case Studies",
     overview_sub: "Foundations",
     overview_heading: "More Than Marketing. We Build Business Growth.",
     overview_desc: "We reject superficial vanity metrics. By synchronizing creative storytelling, retail presence, and scientific media buying, we help enterprises scale sustainably.",
@@ -51,9 +51,9 @@ const translations = {
     s5_desc: "Disciplined advertising spend execution across Meta (Facebook/Instagram) and TikTok Ads. Granular audience targeting, retargeting funnels, budget pacing, and ROAS focus.",
     s6_title: "Connecting Digital to Retail",
     s6_desc: '"Online brings them in. Offline turns them into customers." We design in-store POSM, retail promotion concepts, and seasonal launch events that turn followers into footfall.',
-    cases_sub: "Contract Track Record",
-    cases_heading: "Enterprise Partnerships & Commercial Deals",
-    cases_subdesc: "Documented agreements, detailed scopes of work, and quantifiable execution delivered for industry-leading conglomerates.",
+    cases_sub: "Featured Case Studies",
+    cases_heading: "Enterprise Partnerships & Campaign Showcases",
+    cases_subdesc: "Strategic multi-channel campaigns, high-impact visual design, and quantifiable brand growth delivered for leading enterprises.",
     port_sub: "Creative Registry",
     port_heading: "Creative Works Across Diverse Industries",
     port_desc: "Click any project to inspect high-definition visuals, campaign intent, creative direction, and industry vertical.",
@@ -61,12 +61,12 @@ const translations = {
     clients_heading: "Our Valued Clients & Partners",
     clients_desc: "Over 30 verified consumer brands, retail chains, and enterprise partners across Myanmar.",
     clients_caption: "Including Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique, Fauget, Marga, and more.",
-    pkg_sub: "Commercial Terms",
+    pkg_sub: "Agency Retainers",
     pkg_heading: "Clear, Scalable Marketing Investments",
-    pkg_desc: "Extracted directly from our official service agreements and quotations. Pick a standard monthly tier or take advantage of our exclusive partnership promotion.",
-    wf_sub: "Governance",
-    wf_heading: "6-Step Production Workflow & SOW SLA",
-    wf_desc: "We operate with standard corporate precision. Every deliverable follows our documented approval chain and legal policy checks."
+    pkg_desc: "Transparent monthly agency retainers and tailored service packages designed to scale your brand presence. Pick a standard monthly tier or take advantage of our exclusive partnership promotion.",
+    wf_sub: "Creative Operations",
+    wf_heading: "6-Step Production Workflow & Creative Standards",
+    wf_desc: "We operate with agency discipline. Every deliverable follows our structured review process, brand alignment checks, and platform compliance guidelines."
   },
   my: {
     banner_badge: "အထူးအစီအစဉ်",
@@ -74,7 +74,7 @@ const translations = {
     banner_link: "စည်းမျဉ်းများ ကြည့်ရန် →",
     nav_overview: "ခံယူချက်",
     nav_services: "ဝန်ဆောင်မှုများ",
-    nav_cases: "စာချုပ်မှတ်တမ်း",
+    nav_cases: "ဖြစ်ရပ်လေ့လာချက်များ",
     nav_portfolio: "ဒီဇိုင်းလက်ရာများ",
     nav_clients: "မိတ်ဖက်များ",
     nav_pricing: "ဈေးနှုန်းများ",
@@ -87,7 +87,7 @@ const translations = {
     stat_output_label: "လစဉ် စီမံထုတ်လုပ်ပေးသော အကြောင်းအရာများ",
     stat_model_label: "ပူးပေါင်းဆောင်ရွက်မှု မော်ဒယ်",
     hero_cta_portfolio: "ဒီဇိုင်းလက်ရာများ ကြည့်ရန်",
-    hero_cta_cases: "Landmark & Time Square စာချုပ်ဖိုင်များ",
+    hero_cta_cases: "Landmark & Time Square ကမ်ပိန်းများ",
     overview_sub: "အခြေခံ မဏ္ဍိုင်များ",
     overview_heading: "စျေးကွက်ရှာဖွေခြင်းထက် ပိုမိုခိုင်မာသော စီးပွားရေး တိုးတက်မှုကို တည်ဆောက်ပါသည်",
     overview_desc: "အပေါ်ယံဂဏန်းများထက် စီးပွားရေးလုပ်ငန်းအတွက် အမှန်တကယ် အရောင်းတိုးတက်မှုနှင့် အမှတ်တံဆိပ်ခိုင်မာမှုကို ဦးတည်ပါသည်။ ဆန်းသစ်သော ဖန်တီးမှု၊ ဆိုင်တွင်းအရောင်းမြှင့်တင်မှုနှင့် တိကျသောကြော်ငြာများကို စနစ်တကျ ပေါင်းစပ်ဆောင်ရွက်ပေးပါသည်။",
@@ -114,9 +114,9 @@ const translations = {
     s5_desc: "Meta (Facebook/Instagram) နှင့် TikTok ကြော်ငြာများကို တိကျသော ပစ်မှတ်အုပ်စုထံ အထိရောက်ဆုံး ကုန်ကျစရိတ်ဖြင့် ရောက်ရှိအောင် စီမံမောင်းနှင်ပေးခြင်း။",
     s6_title: "Digital မှ Retail ဆိုင်တွင်းအရောင်းသို့ ချိတ်ဆက်ခြင်း",
     s6_desc: '"အွန်လိုင်းက စိတ်ဝင်စားသူကို ခေါ်ဆောင်ပြီး ဆိုင်တွင်းမှာ ဝယ်ယူသူအဖြစ် ပြောင်းလဲပေးသည်။" ဆိုင်တွင်း POSM ဒီဇိုင်းများနှင့် အရောင်းမြှင့်တင်ရေး အစီအစဉ်များ ချိတ်ဆက်ပေးခြင်း။',
-    cases_sub: "စာချုပ်မှတ်တမ်း",
-    cases_heading: "စီးပွားရေးလုပ်ငန်းကြီးများနှင့် လက်တွဲဆောင်ရွက်မှုများ",
-    cases_subdesc: "တရားဝင်ချုပ်ဆိုထားသော စာချုပ်များ၊ အသေးစိတ် Scope of Work များနှင့် အရည်အသွေးမြင့် လုပ်ငန်းလည်ပတ်မှု စံနှုန်းများ။",
+    cases_sub: "ဖြစ်ရပ်လေ့လာချက်များ",
+    cases_heading: "ထိပ်တန်း လုပ်ငန်းကြီးများနှင့် အောင်မြင်သော ကမ်ပိန်းများ",
+    cases_subdesc: "မဟာဗျူဟာမြောက် ကမ်ပိန်းများ၊ ဖန်တီးမှုဒီဇိုင်းများနှင့် တိုင်းတာနိုင်သော ရလဒ်ကောင်းများကို ဖော်ဆောင်ပေးထားသည့် လက်ရာများ။",
     port_sub: "ဖန်တီးမှု မှတ်တမ်းများ",
     port_heading: "ကဏ္ဍပေါင်းစုံအတွက် အရည်အသွေးမြင့် ဖန်တီးမှုလက်ရာများ",
     port_desc: "ဒီဇိုင်းတစ်ခုချင်းစီကို နှိပ်၍ အသေးစိတ် အချက်အလက်များနှင့် မဟာဗျူဟာရည်ရွယ်ချက်များကို လေ့လာနိုင်ပါသည်။",
@@ -124,12 +124,12 @@ const translations = {
     clients_heading: "ကျွန်ုပ်တို့၏ တန်ဖိုးထားရသော မိတ်ဖက်လုပ်ငန်းများ",
     clients_desc: "မြန်မာနိုင်ငံတစ်ဝှမ်းရှိ အမှတ်တံဆိပ် ၃၀ ကျော်၏ ယုံကြည်အားကိုးမှု။",
     clients_caption: "Landmark United Holdings, Time Square Trading, BAKES by BBB, Dear Mary, Hwar Kway, Inle House, Khit's Boutique စသည့် လုပ်ငန်းများစွာ ပါဝင်ပါသည်။",
-    pkg_sub: "စီးပွားရေးဆိုင်ရာ စည်းမျဉ်းများ",
+    pkg_sub: "အေဂျင်စီ ဝန်ဆောင်မှု ပက်ကေ့ချ်များ",
     pkg_heading: "ရှင်းလင်းတိကျသော ရင်းနှီးမြှုပ်နှံမှု ပက်ကေ့ချ်များ",
-    pkg_desc: "တရားဝင် ဝန်ဆောင်မှု စာချုပ်နှင့် Quotation များမှ တိုက်ရိုက်ထုတ်ယူထားသော အမှန်ကန်ဆုံး ဈေးနှုန်းများဖြစ်ပါသည်။",
-    wf_sub: "စီမံအုပ်ချုပ်မှု စံနှုန်းများ",
-    wf_heading: "အဆင့် ၆ ဆင့်ပါ ထုတ်လုပ်မှု လုပ်ငန်းစဉ်နှင့် SLA စံချိန်စံညွှန်း",
-    wf_desc: "အဆင့်တိုင်းတွင် တိကျသော သဘောတူညီချက်များ၊ အတည်ပြုချက်များနှင့် ဥပဒေ/ပလက်ဖောင်း စည်းမျဉ်းများကို လိုက်နာဆောင်ရွက်ပါသည်။"
+    pkg_desc: "ပွင့်လင်းမြင်သာပြီး အဆင့်အတန်းမြင့်မားသော ဝန်ဆောင်မှု ပက်ကေ့ချ်များနှင့် ဈေးနှုန်းသတ်မှတ်ချက်များ ဖြစ်ပါသည်။",
+    wf_sub: "ဖန်တီးမှု လုပ်ငန်းစဉ်",
+    wf_heading: "အဆင့် ၆ ဆင့်ပါ ထုတ်လုပ်မှု လုပ်ငန်းစဉ်နှင့် အရည်အသွေး စံချိန်စံညွှန်းများ",
+    wf_desc: "အဆင့်တိုင်းတွင် စနစ်တကျ ပြန်လည်သုံးသပ်ခြင်း၊ အမှတ်တံဆိပ်နှင့် ကိုက်ညီမှုရှိစေခြင်းနှင့် ပလက်ဖောင်း စည်းမျဉ်းများကို လိုက်နာဆောင်ရွက်ပါသည်။"
   }
 };
 
@@ -208,9 +208,15 @@ function openLightbox(imgSrc, title, desc) {
   dialog.showModal();
 }
 
+function openCaseStudyModal(caseId) {
+  const dialog = document.getElementById('caseStudyDialog') || document.getElementById('contractDialog');
+  if (dialog) {
+    dialog.showModal();
+  }
+}
+
 function openContractDetailsModal() {
-  const dialog = document.getElementById('contractDialog');
-  dialog.showModal();
+  openCaseStudyModal('landmark');
 }
 
 // Fallback for light-dismiss on browsers lacking native closedby="any"
@@ -263,7 +269,7 @@ function setupPricingCalculator() {
     tiktokVal.textContent = `${tiktokVideos} Videos`;
     adVal.textContent = `${formatMMK(adSpend)}`;
 
-    // Formula grounded in SOW-2026-10012 standards
+    // Standard agency retainer calculation based on deliverable mix
     let monthlyAgencyFee = 400000 + (fbPosts * 25000) + (tiktokVideos * 100000);
     monthlyAgencyFee = Math.round(monthlyAgencyFee / 50000) * 50000;
     if (monthlyAgencyFee < 500000) monthlyAgencyFee = 500000;

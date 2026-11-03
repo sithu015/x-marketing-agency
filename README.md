@@ -24,9 +24,9 @@
 - **75+ Curated Phosphor Technical Icons**: Standardized with consistent 20px / 24px bounding boxes, soft rounded backgrounds, and stroke weights (`ph-bold`).
 - **Interactive Budget & Deliverable Calculator**: Live slider and add-on selector computing monthly costs, post/video counts, turnaround SLAs, and revision allotments.
 - **Native HTML5 `<dialog>` Case Study Modals**: Accessible top-layer overlays with `@starting-style` entry transitions, escape key triggers, and backdrop light-dismissal.
-- **Data Grounded in Official Contracts**:
-  - **Landmark United Holdings**: SOW #`X-SOW-2026-10012`, MMK 8,500,000 budget, 46 monthly deliverables (32 FB Posts + 14 TikToks), 3+1 promo package.
-  - **Time Square Trading**: Armani Exchange & Giorgio Armani luxury retail footfall activation.
+- **Featured Brand Case Studies**:
+  - **Landmark United Holdings**: Dual-Division Spirits & Fashion brand acceleration, 46 monthly high-impact assets (32 FB Posts + 14 TikToks), and 3+1 growth model.
+  - **Time Square Trading**: Armani Exchange & Giorgio Armani luxury retail footfall activation and in-store synergy.
   - **30+ Enterprise Client Roster**: Real logo showcases across FMCG, Retail, Hospitality, and Fashion.
 
 ---
