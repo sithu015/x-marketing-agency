@@ -6,33 +6,33 @@
   <title>X Marketing Agency — Growth Strategy & Creative Portfolio</title>
   <meta name="description" content="Growth marketing partner based in Myanmar. Strategic brand architecture, TikTok short video production, Meta performance media buying, and retail integration.">
   
-  <!-- Typography: Instrument Serif, Geist, Geist Mono, Pyidaungsu -->
+  <!-- Typography: Plus Jakarta Sans, Instrument Serif, Geist Mono, Pyidaungsu -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Pyidaungsu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Pyidaungsu:wght@400;700&display=swap" rel="stylesheet">
   
   <!-- Phosphor Icons (Technical, consistent stroke width: Regular and Bold) -->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
 
-  <!-- Tailwind CSS via CDN with customized minimalist configuration -->
+  <!-- Tailwind CSS via CDN with customized dark agency configuration -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            canvas: '#FBFBFA',
-            surface: '#FFFFFF',
-            subtle: '#F7F6F3',
-            border: '#EAEAEA',
-            borderStrong: '#D4D4D2',
-            charcoal: '#141413',
-            muted: '#6A6A67',
-            lightMuted: '#92928F'
+            canvas: '#07080D',
+            surface: '#0E121E',
+            subtle: '#141A2B',
+            border: 'rgba(255, 255, 255, 0.08)',
+            borderStrong: 'rgba(255, 255, 255, 0.18)',
+            charcoal: '#F8FAFC',
+            muted: '#94A3B8',
+            lightMuted: '#64748B'
           },
           fontFamily: {
-            sans: ['Geist', 'Pyidaungsu', '-apple-system', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'Geist', 'Pyidaungsu', '-apple-system', 'sans-serif'],
             serif: ['"Instrument Serif"', 'Pyidaungsu', 'Georgia', 'serif'],
             mono: ['"Geist Mono"', 'SF Mono', 'monospace']
           }
@@ -42,7 +42,7 @@
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-canvas text-charcoal font-sans selection:bg-neutral-200">
+<body class="bg-canvas text-charcoal font-sans selection:bg-cyan-500/30 selection:text-white">
 
   <!-- NAVIGATION HEADER -->
   <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-border">
@@ -134,34 +134,41 @@
     </div>
   </header>
 
-  <!-- HERO SECTION: EDITORIAL TYPOGRAPHY & ASYMMETRICAL BENTO -->
-  <section class="py-20 md:py-28 border-b border-border">
-    <div class="content-constraint">
+  <!-- HERO SECTION: RICH CYBER-LUXURY SHOWCASE -->
+  <section class="py-20 md:py-28 border-b border-border relative overflow-hidden">
+    <!-- Ambient Atmospheric Glow Orbs -->
+    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="content-constraint relative z-10">
       
-      <!-- Top Meta Tag with Location Pin Icon -->
+      <!-- Top Meta Tag with Glowing Pulse Beacon -->
       <div class="mb-6 flex flex-wrap items-center gap-3">
-        <span class="badge-neutral font-mono">
-          <i class="ph-bold ph-shield-check text-xs"></i>
+        <span class="badge-neutral font-mono flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
           <span data-i18n="hero_tagline">Independent Marketing Growth Practice</span>
         </span>
-        <span class="text-xs text-muted font-mono flex items-center gap-1">
-          <i class="ph-bold ph-map-pin text-xs"></i>
+        <span class="text-xs text-muted font-mono flex items-center gap-1.5">
+          <i class="ph-bold ph-map-pin text-xs text-cyan-400"></i>
           <span>Yangon, Myanmar • Est. 2026</span>
         </span>
       </div>
 
-      <!-- Main Headline with Editorial Serif Contrast -->
+      <!-- Main Headline with Rich Gradient Highlights -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-16">
         <div class="lg:col-span-8 space-y-5">
-          <h1 class="font-editorial text-5xl sm:text-6xl lg:text-7xl text-charcoal tracking-tight font-normal leading-[1.05]" data-i18n="hero_title">
-            Strategic brand presence across digital & physical retail.
+          <h1 class="font-editorial text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight font-normal leading-[1.05]" data-i18n="hero_title">
+            <span class="gradient-text-glow">Strategic brand presence</span> across <span class="gradient-text-cyan">digital & physical retail.</span>
           </h1>
           <p class="text-base sm:text-lg text-muted max-w-2xl font-normal leading-relaxed" data-i18n="hero_desc">
             X Marketing Agency partners with consumer brands, conglomerates, and retailers in Myanmar to turn attention into quantifiable commercial growth through disciplined media buying, editorial visual design, and viral short video production.
           </p>
         </div>
 
-        <!-- Quick Facts Column with Technical Icon Badges -->
+        <!-- Quick Facts Column with Technical Glowing Icon Badges -->
         <div class="lg:col-span-4 border-l border-border pl-6 space-y-5">
           <div class="flex items-start gap-3">
             <div class="icon-box icon-box-blue mt-0.5">
@@ -169,7 +176,7 @@
             </div>
             <div>
               <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_clients_label">Active Partners</div>
-              <div class="text-2xl font-semibold text-charcoal mt-0.5">30+ Enterprise & Retailers</div>
+              <div class="text-2xl font-bold text-white mt-0.5">30+ Enterprise & Retailers</div>
             </div>
           </div>
 
@@ -179,7 +186,7 @@
             </div>
             <div>
               <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_output_label">Monthly Deliverables Managed</div>
-              <div class="text-2xl font-semibold text-charcoal mt-0.5">180+ Creative Assets Delivered</div>
+              <div class="text-2xl font-bold text-white mt-0.5">180+ Creative Assets Delivered</div>
             </div>
           </div>
 
@@ -189,7 +196,7 @@
             </div>
             <div>
               <div class="font-mono text-xs text-lightMuted uppercase" data-i18n="stat_model_label">Service Scope</div>
-              <div class="text-2xl font-semibold text-charcoal mt-0.5">Full-Funnel Creative & Media</div>
+              <div class="text-2xl font-bold text-white mt-0.5">Full-Funnel Creative & Media</div>
             </div>
           </div>
         </div>
@@ -280,7 +287,7 @@
   </section>
 
   <!-- METHODOLOGY & 4 CORE PILLARS -->
-  <section id="overview" class="py-24 border-b border-border bg-surface">
+  <section id="overview" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-16 space-y-3">
@@ -349,7 +356,7 @@
   </section>
 
   <!-- SERVICE SUITE WITH ICON HEADERS & ICON BULLETS -->
-  <section id="services" class="py-24 border-b border-border bg-canvas">
+  <section id="services" class="py-24 border-b border-border bg-transparent relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-16 space-y-3">
@@ -499,7 +506,7 @@
   </section>
 
   <!-- CASE STUDIES: SELECTED BRAND CAMPAIGNS -->
-  <section id="case-studies" class="py-24 border-b border-border bg-surface">
+  <section id="case-studies" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-16 space-y-3">
@@ -614,7 +621,7 @@
   </section>
 
   <!-- CURATED PORTFOLIO GALLERY WITH ICONIZED CATEGORY PILLS -->
-  <section id="portfolio" class="py-24 border-b border-border bg-canvas">
+  <section id="portfolio" class="py-24 border-b border-border bg-transparent relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-12 space-y-3">
@@ -837,7 +844,7 @@
   </section>
 
   <!-- CLIENT ROSTER -->
-  <section id="clients" class="py-24 border-b border-border bg-surface">
+  <section id="clients" class="py-24 border-b border-border bg-surface/40 backdrop-blur-sm relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-12 space-y-3">
@@ -866,7 +873,7 @@
   </section>
 
   <!-- OPERATIONAL WORKFLOW WITH ICONIZED STEPS -->
-  <section id="workflow" class="py-24 border-b border-border bg-surface">
+  <section id="workflow" class="py-24 border-b border-border bg-transparent relative">
     <div class="content-constraint">
       
       <div class="max-w-3xl mb-16 space-y-3">
@@ -1014,7 +1021,7 @@
   </section>
 
   <!-- CONTACT & ENGAGEMENT FOOTER -->
-  <footer id="contact" class="py-24 bg-canvas border-t border-border">
+  <footer id="contact" class="py-24 bg-surface/40 border-t border-border relative">
     <div class="content-constraint">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-border">
